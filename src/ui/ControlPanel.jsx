@@ -180,7 +180,7 @@ export default function ControlPanel({
         <div style={styles.panel}>
           {/* ── Encabezado ── */}
           <div style={styles.header}>
-            <div style={styles.headerTitle}>🗑️ SimBarrio</div>
+            <div style={styles.headerTitle}>🗑️ Simulador</div>
             <div style={styles.headerSub}>
               Gestión de Residuos · Villa Mercedes, SL
             </div>
