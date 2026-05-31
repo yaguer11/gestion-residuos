@@ -1,0 +1,707 @@
+ 
+Universidad
+ 
+Nacional
+ 
+de
+ 
+Villa
+ 
+Mercedes
+ 
+ 
+ 
+ 
+Trabajo Practico N° 3 
+ 
+ 
+Carrera: Ingeniería en Sistemas de Información. 
+Materia: Metodología de la investigación. 
+Profesora: Helga Myrna Blanco.  
+Alumnos: Germán Adrián Muñoz. 
+Fecha de entrega: 13/05/2026 
+
+
+Trabajo Práctico N° 3
+ 
+1)
+ 
+Escriba
+ 
+el
+ 
+plan teamien to
+ 
+del
+ 
+problema
+ 
+y
+ 
+justificación
+ 
+siguiendo
+ 
+las
+ 
+paut as
+ 
+plan teadas
+ 
+en
+ 
+clase
+ 
+de
+ 
+Teoría
+ 
+y
+ 
+las
+ 
+Normas
+ 
+Apa.
+ 
+ 
+Plan teamien to del problema y justificación 
+En la ciudad de Villa Mercedes, provincia de San Luis, se observa una problemá tica vinculada 
+a
+ 
+la
+ 
+gestión
+ 
+de
+ 
+los
+ 
+residuos
+ 
+sólidos
+ 
+urbanos.
+ 
+ 
+A pesar de los esfuerz os municipales por man tener la limpie za, persiste una desincr onización 
+entre
+ 
+los
+ 
+horarios
+ 
+de
+ 
+recolección
+ 
+y
+ 
+el
+ 
+momen to
+ 
+en
+ 
+que
+ 
+los
+ 
+vecinos
+ 
+deposit an
+ 
+sus
+ 
+desechos
+ 
+en
+ 
+la
+ 
+vía
+ 
+públic a.
+ 
+Esta
+ 
+situación
+ 
+deriv a
+ 
+en
+ 
+la
+ 
+obstrucción
+ 
+de
+ 
+desagües
+ 
+pluviales
+ 
+y
+ 
+la
+ 
+proliferación
+ 
+de
+ 
+micr obasur ales,
+ 
+afectando
+ 
+la
+ 
+higiene
+ 
+urbana
+ 
+y
+ 
+los
+ 
+costos
+ 
+oper ativos
+ 
+del
+ 
+municipio.
+ 
+Los vecinos deposit an los desechos en la vía públic a en horarios que no coinciden con el 
+paso
+ 
+del
+ 
+servicio
+ 
+de
+ 
+recolección.
+ 
+Esta
+ 
+situación
+ 
+no
+ 
+solo
+ 
+degr ada
+ 
+la
+ 
+higiene
+ 
+urbana,
+ 
+sino
+ 
+que
+ 
+gener a
+ 
+consecuencias
+ 
+ambien tales
+ 
+y
+ 
+oper ativas
+ 
+crític as.
+ 
+Frente a este escenario de desin formación, la presen te investigación busc a responder el 
+siguien te
+ 
+interrogante
+ 
+¿Qué
+ 
+grado
+ 
+de
+ 
+acep tación
+ 
+tendría
+ 
+una
+ 
+aplic ación
+ 
+web
+ 
+de
+ 
+alert as
+ 
+vecinales
+ 
+en
+ 
+los
+ 
+residen tes
+ 
+de
+ 
+Villa
+ 
+Mercedes?
+ 
+Para abor dar esta problemá tica debemos determinar el nivel actual de acceso a la 
+información
+ 
+por
+ 
+parte
+ 
+de
+ 
+los
+ 
+vecinos
+ 
+y
+ 
+evaluar
+ 
+la
+ 
+viabilidad
+ 
+técnic a
+ 
+y
+ 
+social
+ 
+de
+ 
+implemen tar
+ 
+esta
+ 
+herr amien ta
+ 
+digit al.
+ 
+Esta investigación se justifica, en primer lugar, porque sirve para iden tificar de forma clara 
+los
+ 
+problemas
+ 
+de
+ 
+comunic ación
+ 
+que
+ 
+existen
+ 
+actualmen te
+ 
+entre
+ 
+el
+ 
+municipio
+ 
+y
+ 
+los
+ 
+vecinos
+ 
+de
+ 
+Villa
+ 
+Mercedes
+ 
+sobr e
+ 
+la
+ 
+recolección
+ 
+de
+ 
+basur a.
+ 
+ 
+A nivel social, este estudio bene ficiar á a la comunidad ya que, al estar mejor informados, los 
+vecinos
+ 
+podr án
+ 
+organizar
+ 
+mejor
+ 
+los
+ 
+horarios
+ 
+de
+ 
+sus
+ 
+hogares,
+ 
+logrando
+ 
+así
+ 
+calles
+ 
+y
+ 
+barrios
+ 
+más
+ 
+limpios.
+ 
+El éxito de esta solución se podr á medir de forma real analiz ando cuán tas personas usan 
+efectiv amen te
+ 
+la
+ 
+aplic ación
+ 
+y
+ 
+compr obando
+ 
+si
+ 
+los
+ 
+camiones
+ 
+municipales
+ 
+de
+ 
+refuerz o
+ 
+terminan
+ 
+su
+ 
+recorrido
+ 
+más
+ 
+rápido
+ 
+al
+ 
+encontrar
+ 
+menos
+ 
+basur a
+ 
+tirada
+ 
+o
+ 
+disper sa,
+ 
+lo
+ 
+que
+ 
+le
+ 
+ahorr aría
+ 
+diner o
+ 
+de
+ 
+limpie za
+ 
+al
+ 
+municipio.
+ 
+Desde el punto de vista teóric o, el estudio demos trará cómo la falta de información oficial 
+empeor a
+ 
+los
+ 
+hábit os
+ 
+ambien tales
+ 
+de
+ 
+los
+ 
+ciudadanos
+ 
+y
+ 
+cómo
+ 
+una
+ 
+herr amien ta
+ 
+tecnológic a
+ 
+puede
+ 
+ayudar
+ 
+a
+ 
+mejor arlos.
+ 
+ 
+ 
+
+2)
+ 
+Escriba
+ 
+los
+ 
+obje tivos
+ 
+gener ales
+ 
+y
+ 
+específic os
+ 
+de
+ 
+la
+ 
+investigación.
+ 
+ 
+Obje tivo Gener al 
+Analiz ar el grado de adopción de una plataforma tecnológic a de alert as vecinales, y evaluar 
+su
+ 
+impact o
+ 
+directo
+ 
+en
+ 
+la
+ 
+eficiencia
+ 
+oper ativa
+ 
+de
+ 
+la
+ 
+recolección
+ 
+de
+ 
+residuos
+ 
+municipales.
+ 
+Obje tivos Específic os 
+●
+ 
+Determinar
+ 
+el
+ 
+nivel
+ 
+actual
+ 
+de
+ 
+acceso
+ 
+a
+ 
+la
+ 
+información
+ 
+sobr e
+ 
+los
+ 
+horarios
+ 
+de
+ 
+recolección
+ 
+de
+ 
+basur a
+ 
+que
+ 
+poseen
+ 
+los
+ 
+vecinos
+ 
+de
+ 
+Villa
+ 
+Mercedes.
+ 
+●
+ 
+Evaluar
+ 
+el
+ 
+grado
+ 
+de
+ 
+acep tación
+ 
+de
+ 
+la
+ 
+aplic ación
+ 
+web
+ 
+median te
+ 
+el
+ 
+monit oreo
+ 
+de
+ 
+métricas
+ 
+de
+ 
+uso
+ 
+del
+ 
+sistema
+ 
+durante
+ 
+su
+ 
+período
+ 
+de
+ 
+prueba.
+ 
+●
+ 
+Determinar
+ 
+el
+ 
+volumen
+ 
+de
+ 
+trabajo
+ 
+de
+ 
+los
+ 
+camiones
+ 
+municipales
+ 
+de
+ 
+limpie za
+ 
+de
+ 
+refuerz o
+ 
+antes
+ 
+y
+ 
+después
+ 
+de
+ 
+la
+ 
+implemen tación.
+ 
+ 
+3)
+ 
+Escriba
+ 
+la
+ 
+hipót esis
+ 
+de
+ 
+la
+ 
+investigación.
+ 
+ 
+Hipót esis 
+La ciudadanía presen tará un alto grado de acep tación hacia la implemen tación de una 
+aplic ación
+ 
+web
+ 
+de
+ 
+alert as
+ 
+vecinales
+ 
+como
+ 
+solución
+ 
+tecnológic a
+ 
+frente
+ 
+a
+ 
+la
+ 
+desin formación
+ 
+actual.
+ 
+ 
+-
+ 
+ 
+ 
+ 
+ 

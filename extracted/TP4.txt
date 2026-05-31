@@ -1,0 +1,2915 @@
+ Universidad Nacional 
+de Villa Mercedes 
+ 
+ 
+ 
+Trabajo Practico N° 4 
+ 
+ 
+Carrera: Ingeniería en Sistemas de Información. 
+Materia: Metodología de la investigación. 
+Profesora: Helga Myrna Blanco.  
+Alumnos: Germán Adrián Muñoz. 
+Fecha de entrega: 26/05/2026 
+
+
+Trabajo Práctico N° 4
+ 
+1)
+ 
+Escribir
+ 
+el
+ 
+indice
+ 
+del
+ 
+Mar co
+ 
+teóric o
+ 
+(indice:
+ 
+Con
+ 
+títulos-c apitulos
+ 
+y
+ 
+subtítulos)
+ 
+y
+ 
+seleccionar
+ 
+un
+ 
+capitulo
+ 
+y
+ 
+escribir
+ 
+desarr ollarlo
+ 
+extensión
+ 
+no
+ 
+mas
+ 
+de
+ 
+10
+ 
+pag.
+ 
+siguiendo
+ 
+citación
+ 
+y
+ 
+referencia
+ 
+de
+ 
+Normas
+ 
+Apa.
+ 
+ 
+Recuer de que en el indice de marco teóric o no es solo copy and paste de 
+anteceden tes.
+ 
+Es
+ 
+entre
+ 
+otras
+ 
+cosas
+ 
+definir
+ 
+concep tos
+ 
+que
+ 
+servirán
+ 
+a
+ 
+su
+ 
+trabajo
+ 
+según
+ 
+su
+ 
+pregun ta
+ 
+de
+ 
+investigación
+ 
+especific a.
+ 
+ 
+Índice del Mar co Teóric o 
+Capítulo 1: Gestión de Residuos Sólidos Urbanos 
+1.1. Definición y clasific ación de residuos sólidos urbanos 
+1.2. El ciclo de recolección municipal, etapas y actores 
+1.3. Problemá ticas asociadas a la desincr onización en la recolección 
+1.4. Impact o ambien tal y urbano de los micr obasur ales 
+1.5. Anteceden tes de investigación sobr e residuos urbanos en ciudades intermedias de 
+Argentina
+ 
+Capítulo 2: Comunic ación entre el Estado Municipal y la Ciudadanía 
+2.1. Comunic ación institucional: concep to y dimensiones 
+2.2. Brecha informacional entre municipio y vecinos 
+2.3. El rol de la información en la modific ación de conduct as ambien tales 
+2.4. Participación ciudadana y gobierno abiert o 
+Capítulo 3: Tecnología y Servicios Urbanos Inteligentes 
+3.1. Ciudad inteligente, definición y componen tes 
+3.2. Aplic aciones móviles y web en la gestión de servicios públic os 
+3.3. Sistemas de alert as y notific aciones vecinales, casos de estudio 
+3.4. Barr eras tecnológic as y brecha digit al en la adopción de apps municipales 
+Capítulo 4: Acep tación Tecnológic a y Comport amien to del Usuario 
+4.1. Modelo de Acep tación Tecnológic a, fundamen tos 
+4.2. Factores que determinan la adopción de tecnología en contextos cívic os 
+4.3. Usabilidad percibida y utilidad percibida en aplic aciones de participación 
+4.4. Medición de la acep tación tecnológic a, indic ador es y métricas 
+Capítulo 5: Mar co Legal y Norma tivo 
+5.1. Legislación nacional sobr e residuos sólidos urbanos (Ley 25.916) 
+5.2. Norma tiva provincial de San Luis en materia ambien tal y residuos 
+
+5.3. Norma tiva municipal de Villa Mercedes 
+ 
+Capítulo 4: Acep tación Tecnológic a y Comport amien to del Usuario 
+La compr ensión de los factores que llevan a un ciudadano a adop tarv o rechaz ar una 
+herr amien ta
+ 
+tecnológic a
+ 
+result a
+ 
+central
+ 
+para
+ 
+evaluar
+ 
+la
+ 
+viabilidad
+ 
+de
+ 
+una
+ 
+aplic ación
+ 
+web
+ 
+de
+ 
+alert as
+ 
+vecinales.
+ 
+En
+ 
+el
+ 
+marco
+ 
+de
+ 
+la
+ 
+presen te
+ 
+investigación,
+ 
+cuya
+ 
+pregun ta
+ 
+central
+ 
+indag a
+ 
+el
+ 
+grado
+ 
+de
+ 
+acep tación
+ 
+de
+ 
+dicha
+ 
+plataforma
+ 
+en
+ 
+la
+ 
+ciudad
+ 
+de
+ 
+Villa
+ 
+Mercedes,
+ 
+el
+ 
+estudio
+ 
+de
+ 
+los
+ 
+modelos
+ 
+y
+ 
+teorías
+ 
+de
+ 
+acep tación
+ 
+tecnológic a
+ 
+propor ciona
+ 
+el
+ 
+sustento
+ 
+concep tual
+ 
+necesario
+ 
+para
+ 
+interpr etar
+ 
+los
+ 
+datos
+ 
+que
+ 
+se
+ 
+recopilar án.
+ 
+Este
+ 
+capítulo
+ 
+desarr olla
+ 
+los
+ 
+principales
+ 
+enfoques
+ 
+teóric os
+ 
+vinculados
+ 
+a
+ 
+la
+ 
+adopción
+ 
+de
+ 
+tecnología
+ 
+por
+ 
+parte
+ 
+de
+ 
+usuarios
+ 
+en
+ 
+contextos
+ 
+cívic os
+ 
+y
+ 
+de
+ 
+servicios
+ 
+públic os.
+ 
+4.1. Modelo de Acep tación Tecnológic a (TAM): fundamen tos 
+El Modelo de Acep tación Tecnológic a, Technology Accep tance Model, conocido por sus 
+siglas
+ 
+en
+ 
+inglés
+ 
+como
+ 
+TAM,
+ 
+fue
+ 
+propues to
+ 
+por
+ 
+Davis
+ 
+(1989)
+ 
+como
+ 
+una
+ 
+adap tación
+ 
+de
+ 
+la
+ 
+Teoría
+ 
+de
+ 
+la
+ 
+Acción
+ 
+Razonada
+ 
+(TRA)
+ 
+de
+ 
+Fishbein
+ 
+y
+ 
+Ajzen
+ 
+(1975).
+ 
+Su
+ 
+propósit o
+ 
+original
+ 
+fue
+ 
+explic ar
+ 
+los
+ 
+determinan tes
+ 
+de
+ 
+la
+ 
+acep tación
+ 
+de
+ 
+los
+ 
+sistemas
+ 
+de
+ 
+información
+ 
+por
+ 
+parte
+ 
+de
+ 
+los
+ 
+usuarios.
+ 
+Desde
+ 
+su
+ 
+formulación,
+ 
+el
+ 
+TAM
+ 
+se
+ 
+ha
+ 
+convertido
+ 
+en
+ 
+uno
+ 
+de
+ 
+los
+ 
+modelos
+ 
+más
+ 
+citados
+ 
+y
+ 
+aplic ados
+ 
+en
+ 
+el
+ 
+campo
+ 
+de
+ 
+los
+ 
+sistemas
+ 
+de
+ 
+información
+ 
+y
+ 
+la
+ 
+tecnología
+ 
+educ ativa
+ 
+(Venkatesh
+ 
+et
+ 
+al.,
+ 
+2003).
+ 
+En su formulación original, Davis (1989) postula que la intención conductual de uso de una 
+tecnología
+ 
+está
+ 
+determinada
+ 
+por
+ 
+dos
+ 
+creencias
+ 
+fundamen tales:
+ 
+la
+ 
+utilidad
+ 
+percibida
+ 
+y
+ 
+la
+ 
+facilidad
+ 
+de
+ 
+uso
+ 
+percibida.
+ 
+La
+ 
+utilidad
+ 
+percibida
+ 
+se
+ 
+define
+ 
+como
+ 
+el
+ 
+grado
+ 
+en
+ 
+que
+ 
+una
+ 
+persona
+ 
+cree
+ 
+que
+ 
+utiliz ar
+ 
+un
+ 
+sistema
+ 
+particular
+ 
+mejor aría
+ 
+su
+ 
+desempeño
+ 
+labor al
+ 
+o,
+ 
+en
+ 
+sentido
+ 
+amplio ,
+ 
+le
+ 
+report aría
+ 
+bene ficios
+ 
+concr etos.
+ 
+Por
+ 
+su
+ 
+parte,
+ 
+la
+ 
+facilidad
+ 
+de
+ 
+uso
+ 
+percibida
+ 
+refiere
+ 
+al
+ 
+grado
+ 
+en
+ 
+que
+ 
+una
+ 
+persona
+ 
+consider a
+ 
+que
+ 
+utiliz ar
+ 
+el
+ 
+sistema
+ 
+estará
+ 
+libre
+ 
+de
+ 
+esfuerz o.
+ 
+La relación entre ambas construcciones es relevante, la facilidad de uso percibida influye 
+tanto
+ 
+directamen te
+ 
+sobr e
+ 
+la
+ 
+intención
+ 
+de
+ 
+uso
+ 
+como
+ 
+indir ectamen te,
+ 
+a
+ 
+través
+ 
+de
+ 
+su
+ 
+efecto
+ 
+positiv o
+ 
+sobr e
+ 
+la
+ 
+utilidad
+ 
+percibida.
+ 
+Es
+ 
+decir ,
+ 
+cuan to
+ 
+más
+ 
+fácil
+ 
+le
+ 
+result a
+ 
+al
+ 
+usuario
+ 
+interactuar
+ 
+
+con el sistema, mayor es la probabilidad de que lo perciba como útil y, en consecuencia, 
+decida
+ 
+adop tarlo
+ 
+(Davis,
+ 
+1989).
+ 
+Venkatesh y Davis (2000) ampliar on el modelo original con una versión extendida 
+denominada
+ 
+TAM2,
+ 
+incorpor ando
+ 
+variables
+ 
+de
+ 
+influencia
+ 
+social
+ 
+y
+ 
+procesos
+ 
+instrumen tales
+ 
+cognitiv os.
+ 
+Posteriormen te,
+ 
+Venkatesh
+ 
+et
+ 
+al.
+ 
+(2003)
+ 
+integraron
+ 
+elemen tos
+ 
+de
+ 
+ocho
+ 
+modelos
+ 
+previos
+ 
+en
+ 
+la
+ 
+Teoría
+ 
+Unific ada
+ 
+de
+ 
+Acep tación
+ 
+y
+ 
+Uso
+ 
+de
+ 
+la
+ 
+Tecnología
+ 
+(UTAUT),
+ 
+que
+ 
+añade
+ 
+construct os
+ 
+como
+ 
+la
+ 
+expect ativa
+ 
+de
+ 
+esfuerz o
+,
+ 
+la
+ 
+influencia
+ 
+social
+ 
+y
+ 
+las
+ 
+condiciones
+ 
+facilit adoras
+ 
+como
+ 
+predict ores
+ 
+del
+ 
+comport amien to
+ 
+de
+ 
+uso.
+ 
+No
+ 
+obstante,
+ 
+para
+ 
+los
+ 
+fines
+ 
+de
+ 
+esta
+ 
+investigación,
+ 
+el
+ 
+TAM
+ 
+original
+ 
+de
+ 
+Davis
+ 
+(1989)
+ 
+result a
+ 
+suficien te,
+ 
+dado
+ 
+que
+ 
+permit e
+ 
+evaluar
+ 
+de
+ 
+maner a
+ 
+clara
+ 
+y
+ 
+oper acionaliz able
+ 
+las
+ 
+percepciones
+ 
+de
+ 
+los
+ 
+ciudadanos
+ 
+sobr e
+ 
+una
+ 
+herr amien ta
+ 
+web
+ 
+de
+ 
+alert as
+ 
+municipales.
+ 
+En el contexto de aplic aciones orien tadas a la participación ciudadana y los servicios 
+públic os
+ 
+digit ales,
+ 
+investigaciones
+ 
+como
+ 
+las
+ 
+de
+ 
+Carter
+ 
+y
+ 
+Bélang er
+ 
+(2005)
+ 
+han
+ 
+adap tado
+ 
+el
+ 
+TAM
+ 
+para
+ 
+analiz ar
+ 
+la
+ 
+adopción
+ 
+de
+ 
+servicios
+ 
+de
+ 
+gobierno
+ 
+electr ónic o
+ 
+(e-governmen t),
+ 
+confirmando
+ 
+que
+ 
+la
+ 
+utilidad
+ 
+percibida
+ 
+y
+ 
+la
+ 
+facilidad
+ 
+de
+ 
+uso
+ 
+percibida
+ 
+man tienen
+ 
+su
+ 
+poder
+ 
+explic ativo
+ 
+cuando
+ 
+el
+ 
+usuario
+ 
+interactúa
+ 
+con
+ 
+tecnologías
+ 
+de
+ 
+origen
+ 
+estatal.
+ 
+Esto
+ 
+otorga
+ 
+al
+ 
+modelo
+ 
+una
+ 
+base
+ 
+sólida
+ 
+para
+ 
+ser
+ 
+aplic ado
+ 
+al
+ 
+caso
+ 
+de
+ 
+una
+ 
+plataforma
+ 
+municipal
+ 
+de
+ 
+alert as
+ 
+vecinales.
+ 
+4.2. Factores que determinan la adopción de tecnología en contextos cívic os 
+Más allá del TAM, la literatura sobr e tecnología cívic a, entendida como el uso de 
+herr amien tas
+ 
+digit ales
+ 
+para
+ 
+mejor ar
+ 
+la
+ 
+participación
+ 
+ciudadana
+ 
+y
+ 
+la
+ 
+provisión
+ 
+de
+ 
+servicios
+ 
+públic os,
+  
+iden tifica
+ 
+un
+ 
+conjun to
+ 
+de
+ 
+factores
+ 
+adicionales
+ 
+que
+ 
+modulan
+ 
+la
+ 
+decisión
+ 
+de
+ 
+adopción.
+ 
+Estos
+ 
+factores
+ 
+pueden
+ 
+agrupar se
+ 
+en
+ 
+tres
+ 
+dimensiones:
+ 
+individuales,
+ 
+sociales
+ 
+y
+ 
+contextuales.
+ 
+4.2.1. Factores individuales 
+Las características propias del usuario influyen de maner a determinan te en su predisposición 
+a
+ 
+adop tar
+ 
+una
+ 
+nueva
+ 
+tecnología.
+ 
+La
+ 
+edad,
+ 
+el
+ 
+nivel
+ 
+educ ativo
+ 
+y
+ 
+la
+ 
+experiencia
+ 
+previa
+ 
+con
+ 
+dispositiv os
+ 
+digit ales
+ 
+son
+ 
+variables
+ 
+frecuen temen te
+ 
+report adas
+ 
+como
+ 
+predict oras
+ 
+del
+ 
+uso
+ 
+de
+ 
+aplic aciones
+ 
+móviles
+ 
+y
+ 
+web
+ 
+(Venkatesh
+ 
+et
+ 
+al.,
+ 
+2003;
+ 
+Czaja
+ 
+et
+ 
+al.,
+ 
+2006).
+ 
+En
+ 
+el
+ 
+caso
+ 
+particular
+ 
+
+de Villa Mercedes, una ciudad intermedia con una población heterogénea en términos de 
+acceso
+ 
+digit al,
+ 
+estas
+ 
+variables
+ 
+cobran
+ 
+especial
+ 
+relevancia.
+ 
+La confianz a institucional también oper a como factor individual, usuarios que desc onfían de 
+la
+ 
+adminis tración
+ 
+municipal
+ 
+pueden
+ 
+mos trar
+ 
+resistencia
+ 
+a
+ 
+adop tar
+ 
+herr amien tas
+ 
+digit ales
+ 
+provistas
+ 
+por
+ 
+ese
+ 
+mismo
+ 
+organismo ,
+ 
+incluso
+ 
+si
+ 
+técnic amen te
+ 
+las
+ 
+perciben
+ 
+como
+ 
+útiles
+ 
+(Warkentin
+ 
+et
+ 
+al.,
+ 
+2002).
+ 
+Asimismo ,
+ 
+la
+ 
+motiv ación
+ 
+intrínsec a,
+ 
+vinculada
+ 
+al
+ 
+interés
+ 
+del
+ 
+ciudadano
+ 
+en
+ 
+mejor ar
+ 
+su
+ 
+entorno
+ 
+barrial
+ 
+puede
+ 
+actuar
+ 
+como
+ 
+impulsor a
+ 
+de
+ 
+la
+ 
+acep tación,
+ 
+independien temen te
+ 
+de
+ 
+las
+ 
+capacidades
+ 
+tecnológic as
+ 
+del
+ 
+individuo.
+ 
+4.2.2. Factores sociales 
+La influencia del entorno social, familia, vecinos, referentes comunit arios, tiene un peso 
+signific ativo
+ 
+en
+ 
+la
+ 
+decisión
+ 
+de
+ 
+adop tar
+ 
+tecnologías
+ 
+de
+ 
+participación.
+ 
+Rogers
+ 
+(2003),
+ 
+en
+ 
+su
+ 
+teoría
+ 
+de
+ 
+la
+ 
+Difusión
+ 
+de
+ 
+Inno vaciones,
+ 
+señala
+ 
+que
+ 
+la
+ 
+adopción
+ 
+de
+ 
+nuevas
+ 
+tecnologías
+ 
+sigue
+ 
+una
+ 
+curva
+ 
+característica
+ 
+en
+ 
+la
+ 
+que
+ 
+los
+ 
+primer os
+ 
+adop tantes
+ 
+actúan
+ 
+como
+ 
+agentes
+ 
+de
+ 
+difusión
+ 
+para
+ 
+el
+ 
+resto
+ 
+de
+ 
+la
+ 
+comunidad.
+ 
+En
+ 
+este
+ 
+marco,
+ 
+la
+ 
+presencia
+ 
+de
+ 
+líder es
+ 
+barriales
+ 
+o
+ 
+referentes
+ 
+vecinales
+ 
+que
+ 
+adop ten
+ 
+y
+ 
+promue van
+ 
+la
+ 
+aplic ación
+ 
+puede
+ 
+ser
+ 
+determinan te
+ 
+para
+ 
+su
+ 
+expansión.
+ 
+Un factor social relevante en la acep tación tecnológic a, iden tificado en el TAM2 y la UTAUT, 
+es
+ 
+la
+ 
+norma
+ 
+subje tiva,
+ 
+definida
+ 
+como
+ 
+la
+ 
+percepción
+ 
+del
+ 
+usuario
+ 
+sobr e
+ 
+lo
+ 
+que
+ 
+sus
+ 
+grupos
+ 
+de
+ 
+referencia
+ 
+esper an
+ 
+que
+ 
+haga.
+ 
+En
+ 
+el
+ 
+contexto
+ 
+de
+ 
+aplic aciones
+ 
+de
+ 
+gobiernos
+ 
+locales,
+ 
+la
+ 
+adopción
+ 
+se
+ 
+potencia
+ 
+cuando
+ 
+la
+ 
+comunidad
+ 
+consider a
+ 
+que
+ 
+el
+ 
+uso
+ 
+de
+ 
+la
+ 
+plataforma
+ 
+es
+ 
+una
+ 
+acción
+ 
+valorada
+ 
+o
+ 
+esper ada
+ 
+(Venkatesh
+ 
+&
+ 
+Davis,
+ 
+2000).
+ 
+4.2.3. Factores contextuales 
+El contexto tecnológic o e institucional en el que se desplieg a la aplic ación condiciona su 
+acep tación.
+ 
+Las
+ 
+condiciones
+ 
+facilit ador as
+ 
+definidas
+ 
+por
+ 
+Venkatesh
+ 
+et
+ 
+al.
+ 
+(2003)
+ 
+como
+ 
+el
+ 
+grado
+ 
+en
+ 
+que
+ 
+el
+ 
+individuo
+ 
+cree
+ 
+que
+ 
+existe
+ 
+infraestructur a
+ 
+organizacional
+ 
+y
+ 
+técnic a
+ 
+para
+ 
+soport ar
+ 
+el
+ 
+uso
+ 
+del
+ 
+sistema
+ 
+son
+ 
+especialmen te
+ 
+relevantes
+ 
+en
+ 
+contextos
+ 
+municipales.
+ 
+La
+ 
+disponibilidad
+ 
+de
+ 
+conectividad
+ 
+a
+ 
+interne t,
+ 
+la
+ 
+existencia
+ 
+de
+ 
+dispositiv os
+ 
+compa tibles
+ 
+y
+ 
+el
+ 
+soport e
+ 
+técnic o
+ 
+ofrecido
+ 
+por
+ 
+el
+ 
+municipio
+ 
+configur an
+ 
+el
+ 
+escenario
+ 
+en
+ 
+que
+ 
+el
+ 
+usuario
+ 
+toma
+ 
+su
+ 
+decisión.
+ 
+
+En ciudades intermedias de Argentina, como Villa Mercedes, el acceso a interne t móvil de 
+banda
+ 
+ancha
+ 
+ha
+ 
+crecido
+ 
+signific ativamen te
+ 
+en
+ 
+la
+ 
+última
+ 
+década,
+ 
+aunque
+ 
+persisten
+ 
+brechas
+ 
+entre
+ 
+zonas
+ 
+céntricas
+ 
+y
+ 
+perif éricas
+ 
+(INDE C,
+ 
+2023).
+ 
+Esta
+ 
+heterogeneidad
+ 
+territ orial
+ 
+debe
+ 
+ser
+ 
+consider ada
+ 
+al
+ 
+diseñar
+ 
+una
+ 
+aplic ación
+ 
+de
+ 
+alcance
+ 
+municipal
+ 
+y
+ 
+al
+ 
+interpr etar
+ 
+los
+ 
+result ados
+ 
+de
+ 
+acep tación.
+ 
+4.3. Usabilidad percibida y utilidad percibida en aplic aciones de participación ciudadana 
+La distinción entre usabilidad percibida, equiv alen te a la facilidad de uso percibida del TAM y 
+utilidad
+ 
+percibida
+ 
+adquier e
+ 
+matices
+ 
+particular es
+ 
+cuando
+ 
+se
+ 
+analiz a
+ 
+en
+ 
+el
+ 
+contexto
+ 
+de
+ 
+aplic aciones
+ 
+de
+ 
+participación
+ 
+ciudadana
+ 
+y
+ 
+servicios
+ 
+municipales.
+ 
+Mien tras
+ 
+que
+ 
+en
+ 
+entornos
+ 
+labor ales
+ 
+la
+ 
+utilidad
+ 
+percibida
+ 
+se
+ 
+asocia
+ 
+a
+ 
+mejor as
+ 
+en
+ 
+el
+ 
+desempeño
+ 
+profesional,
+ 
+en
+ 
+el
+ 
+ámbit o
+ 
+cívic o
+ 
+esta
+ 
+construcción
+ 
+se
+ 
+vincula
+ 
+con
+ 
+los
+ 
+bene ficios
+ 
+comunit arios
+ 
+que
+ 
+el
+ 
+usuario
+ 
+esper a
+ 
+obtener
+ 
+a
+ 
+través
+ 
+del
+ 
+uso
+ 
+de
+ 
+la
+ 
+herr amien ta.
+ 
+Alotaibi y Roussino v (2016) estudiar on la adopción de servicios digit ales de gobierno en 
+Arabia
+ 
+Saudit a
+ 
+y
+ 
+encontraron
+ 
+que
+ 
+la
+ 
+utilidad
+ 
+percibida
+ 
+es
+ 
+el
+ 
+predict or
+ 
+más
+ 
+robus to
+ 
+de
+ 
+la
+ 
+intención
+ 
+de
+ 
+uso,
+ 
+por
+ 
+encima
+ 
+de
+ 
+la
+ 
+facilidad
+ 
+de
+ 
+uso.
+ 
+Esto
+ 
+sugier e
+ 
+que
+ 
+los
+ 
+ciudadanos
+ 
+son
+ 
+capaces
+ 
+de
+ 
+tolerar
+ 
+ciert a
+ 
+complejidad
+ 
+técnic a
+ 
+si
+ 
+consider an
+ 
+que
+ 
+la
+ 
+herr amien ta
+ 
+les
+ 
+report ará
+ 
+bene ficios
+ 
+concr etos,
+ 
+como
+ 
+conocer
+ 
+con
+ 
+anticipación
+ 
+el
+ 
+horario
+ 
+de
+ 
+recolección
+ 
+de
+ 
+residuos
+ 
+en
+ 
+su
+ 
+barrio ,
+ 
+en
+ 
+el
+ 
+caso
+ 
+que
+ 
+ocupa
+ 
+esta
+ 
+investigación.
+ 
+La usabilidad, entendida en términos de diseño de interfaces, jueg a un rol complemen tario. 
+Nielsen
+ 
+(1994)
+ 
+definió
+ 
+la
+ 
+usabilidad
+ 
+como
+ 
+la
+ 
+capacidad
+ 
+de
+ 
+un
+ 
+sistema
+ 
+para
+ 
+ser
+ 
+aprendido ,
+ 
+eficien te,
+ 
+recordable,
+ 
+libre
+ 
+de
+ 
+errores
+ 
+y
+ 
+satisfactorio
+ 
+para
+ 
+el
+ 
+usuario.
+ 
+En
+ 
+aplic aciones
+ 
+orien tadas
+ 
+a
+ 
+poblaciones
+ 
+heterogéneas,
+ 
+como
+ 
+la
+ 
+de
+ 
+Villa
+ 
+Mercedes,
+ 
+donde
+ 
+coexisten
+ 
+adult os
+ 
+mayores
+ 
+y
+ 
+jóvenes
+ 
+con
+ 
+distintos
+ 
+niveles
+ 
+de
+ 
+alfabetización
+ 
+digit al,
+ 
+el
+ 
+diseño
+ 
+accesible
+ 
+e
+ 
+intuitiv o
+ 
+se
+ 
+conviert e
+ 
+en
+ 
+una
+ 
+condición
+ 
+necesaria
+ 
+para
+ 
+garantizar
+ 
+que
+ 
+la
+ 
+utilidad
+ 
+percibida
+ 
+pueda
+ 
+efectiv amen te
+ 
+traducir se
+ 
+en
+ 
+uso
+ 
+sostenido
+ 
+de
+ 
+la
+ 
+plataforma.
+ 
+Zheng et al. (2018), en un estudio sobr e aplic aciones de report e ciudadano de problemas 
+urbanos
+ 
+en
+ 
+ciudades
+ 
+chinas,
+ 
+hallar on
+ 
+que
+ 
+la
+ 
+satisfacción
+ 
+con
+ 
+la
+ 
+usabilidad
+ 
+correlaciona
+ 
+positiv amen te
+ 
+con
+ 
+el
+ 
+nivel
+ 
+de
+ 
+recomendación
+ 
+de
+ 
+la
+ 
+herr amien ta
+ 
+a
+ 
+otros
+ 
+vecinos.
+ 
+Este
+ 
+efecto
+ 
+de
+ 
+propag ación
+ 
+result a
+ 
+particularmen te
+ 
+relevante
+ 
+para
+ 
+el
+ 
+caso
+ 
+estudiado ,
+ 
+dado
+ 
+que
+ 
+el
+ 
+éxito
+ 
+
+de la plataforma de alert as de Villa Mercedes depende, en parte, de alcanzar una masa 
+crític a
+ 
+de
+ 
+usuarios.
+ 
+4.4. Medición de la acep tación tecnológic a: indic ador es y métricas 
+La oper acionaliz ación del concep to de acep tación tecnológic a puede realiz arse a través de 
+distintas
+ 
+estrategias
+ 
+metodológic as,
+ 
+tanto
+ 
+cuan titativas
+ 
+como
+ 
+cualit ativas.
+ 
+En
+ 
+el
+ 
+marco
+ 
+del
+ 
+TAM,
+ 
+la
+ 
+medición
+ 
+se
+ 
+efectúa
+ 
+habitualmen te
+ 
+median te
+ 
+escalas
+ 
+Likert
+ 
+que
+ 
+indag an
+ 
+la
+ 
+utilidad
+ 
+percibida,
+ 
+la
+ 
+facilidad
+ 
+de
+ 
+uso
+ 
+percibida,
+ 
+la
+ 
+actitud
+ 
+hacia
+ 
+el
+ 
+uso
+ 
+y
+ 
+la
+ 
+intención
+ 
+conductual
+ 
+de
+ 
+uso
+ 
+(Davis,
+ 
+1989;
+ 
+Venkatesh
+ 
+et
+ 
+al.,
+ 
+2003).
+ 
+Más allá de los instrumen tos de autorreport e, la literatura especializ ada distingue entre 
+medidas
+ 
+de
+ 
+acep tación
+ 
+declar ada,
+ 
+es
+ 
+decir ,
+ 
+lo
+ 
+que
+ 
+el
+ 
+usuario
+ 
+dice
+ 
+que
+ 
+haría
+ 
+y
+ 
+medidas
+ 
+de
+ 
+comport amien to
+ 
+real,
+ 
+lo
+ 
+que
+ 
+efectiv amen te
+ 
+hace
+ 
+(Legris
+ 
+et
+ 
+al.,
+ 
+2003).
+ 
+Esta
+ 
+distinción
+ 
+cobra
+ 
+especial
+ 
+import ancia
+ 
+al
+ 
+momen to
+ 
+de
+ 
+definir
+ 
+los
+ 
+indic ador es
+ 
+de
+ 
+éxito
+ 
+de
+ 
+la
+ 
+implemen tación
+ 
+de
+ 
+la
+ 
+aplic ación
+ 
+web
+ 
+de
+ 
+Villa
+ 
+Mercedes:
+ 
+el
+ 
+númer o
+ 
+de
+ 
+desc argas
+ 
+o
+ 
+registros
+ 
+no
+ 
+es
+ 
+equiv alen te
+ 
+al
+ 
+uso
+ 
+activ o
+ 
+y
+ 
+sostenido
+ 
+de
+ 
+la
+ 
+plataforma.
+ 
+Entre los indic ador es de uso real más utiliz ados en la literatura se encuen tran: la frecuencia 
+de
+ 
+acceso
+ 
+al
+ 
+sistema,
+ 
+el
+ 
+tiempo
+ 
+de
+ 
+sesión,
+ 
+la
+ 
+tasa
+ 
+de
+ 
+retención
+ 
+de
+ 
+usuarios
+ 
+activ os
+ 
+tras
+ 
+un
+ 
+período
+ 
+determinado ,
+ 
+y
+ 
+el
+ 
+volumen
+ 
+de
+ 
+report es
+ 
+o
+ 
+alert as
+ 
+gener ados
+ 
+por
+ 
+los
+ 
+propios
+ 
+vecinos
+ 
+(Alot aibi
+ 
+&
+ 
+Roussino v,
+ 
+2016;
+ 
+Zheng
+ 
+et
+ 
+al.,
+ 
+2018).
+ 
+Estos
+ 
+indic ador es
+ 
+pueden
+ 
+complemen tarse
+ 
+con
+ 
+métricas
+ 
+de
+ 
+impact o
+ 
+oper ativo,
+ 
+como
+ 
+la
+ 
+reducción
+ 
+en
+ 
+el
+ 
+tiempo
+ 
+de
+ 
+respues ta
+ 
+de
+ 
+los
+ 
+camiones
+ 
+municipales
+ 
+o
+ 
+la
+ 
+disminución
+ 
+de
+ 
+focos
+ 
+de
+ 
+basur a
+ 
+en
+ 
+vía
+ 
+públic a,
+ 
+estableciendo
+ 
+así
+ 
+un
+ 
+puen te
+ 
+entre
+ 
+la
+ 
+acep tación
+ 
+tecnológic a
+ 
+y
+ 
+la
+ 
+eficiencia
+ 
+del
+ 
+servicio
+ 
+municipal.
+ 
+Para la presen te investigación, se propone la utiliz ación de un cues tionario estructur ado 
+basado
+ 
+en
+ 
+las
+ 
+escalas
+ 
+de
+ 
+Davis
+ 
+(1989)
+ 
+adap tadas
+ 
+al
+ 
+contexto
+ 
+de
+ 
+participación
+ 
+ciudadana,
+ 
+complemen tado
+ 
+con
+ 
+el
+ 
+análisis
+ 
+de
+ 
+métricas
+ 
+de
+ 
+uso
+ 
+durante
+ 
+el
+ 
+período
+ 
+de
+ 
+prueba
+ 
+de
+ 
+la
+ 
+aplic ación,
+ 
+tal
+ 
+como
+ 
+se
+ 
+especific a
+ 
+en
+ 
+los
+ 
+obje tivos
+ 
+específic os
+ 
+del
+ 
+estudio.
+ 
+Esta
+ 
+combinación
+ 
+de
+ 
+métodos
+ 
+permitir á
+ 
+obtener
+ 
+una
+ 
+visión
+ 
+integral
+ 
+del
+ 
+grado
+ 
+de
+ 
+acep tación,
+ 
+respondiendo
+ 
+directamen te
+ 
+a
+ 
+la
+ 
+pregun ta
+ 
+de
+ 
+investigación
+ 
+plan teada.
+ 
+  
+  
+
+Referencias 
+• Alotaibi, S. J., & Roussino v, D. (2016). User accep tance of m-governmen t services: A 
+combina tion
+ 
+of
+ 
+TAM
+ 
+and
+ 
+IS
+ 
+success
+ 
+models.
+ 
+2016
+ 
+International
+ 
+Conf erenc e
+ 
+on
+ 
+Information
+ Socie ty (i-Socie ty), 61–66. https://doi.or g/10.1109/i-Socie ty.2016.7854192 
+• Carter, L., & Bélang er, F. (2005). The utiliz ation of e-governmen t services: Citiz en trust, inno vation and accep tance factors. Information Systems Journal, 15(1), 5–25. https://doi.or g/10.1111/j.1365-2575.2005.00183.x 
+• Czaja, S. J., Charness, N., Fisk, A. D., Hertz og, C., Nair, S. N., Rogers, W. A., & Sharit, 
+J.
+ 
+(2006).
+ 
+Factors
+ 
+predicting
+ 
+the
+ 
+use
+ 
+of
+ 
+technology:
+ 
+Findings
+ 
+from
+ 
+the
+ 
+Center
+ 
+for
+ 
+Resear ch
+ 
+and
+ 
+Education
+ 
+on
+ 
+Aging
+ 
+and
+ 
+Technology
+ 
+Enhancemen t
+ 
+(CRE ATE).
+ 
+Psychology
+ 
+and
+ 
+Aging
+,
+ 21(2), 333–352. https://doi.or g/10.1037/0882-7974.21.2.333 
+• Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user accep tance of informa tion technology . MIS Quart erly, 13(3), 319–340. https://doi.or g/10.2307/249008 
+• Fishbein, M., & Ajzen, I. (1975). Belie f, attitude, intention, and behavior: An 
+introduction
+ 
+to
+ 
+theor y
+ 
+and
+ 
+research
+.
+ 
+Addison-W esley.
+ 
+• Institut o Nacional de Estadística y Censos. (2023). Acceso y uso de tecnologías de la 
+información
+ 
+y
+ 
+la
+ 
+comunic ación
+ 
+(TIC):
+ 
+Encues ta
+ 
+Permanen te
+ 
+de
+ 
+Hogares
+.
+ 
+Minis terio
+ 
+de
+ Economía de la Nación Argentina. https://w ww.indec. gob.ar 
+• Legris, P., Ingham, J., & Coller ette, P. (2003). Why do people use informa tion 
+technology?
+ 
+A
+ 
+critic al
+ 
+review
+ 
+of
+ 
+the
+ 
+technology
+ 
+accep tance
+ 
+model.
+ 
+Information
+ 
+&
+ Managemen t, 40(3), 191–204. https://doi.or g/10.1016/S0378-7206(01)00143-4 
+• Nielsen, J. (1994). Usability engineering. Academic Press. 
+• Rogers, E. M. (2003). Diffusion of inno vations (5.ª ed.). Free Press. 
+• Venkatesh, V., & Davis, F. D. (2000). A theor etical extension of the technology accep tance model: Four longitudinal field studies. Managemen t Scienc e, 46(2), 186–204. https://doi.or g/10.1287/mnsc.46.2.186.11926 
+ 
+ 
+ 
+ 
+ 
