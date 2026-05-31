@@ -20,7 +20,7 @@ export default function App() {
   // Control de la simulación
   const [playing, setPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
-  const [panelOpen, setPanelOpen] = useState(true);
+  const [panelOpen, setPanelOpen] = useState(false);
   const [showIntro, setShowIntro] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
   const [autoNotify, setAutoNotify] = useState(false);
@@ -224,16 +224,16 @@ export default function App() {
         type="button"
         onClick={() => setShowIntro(true)}
         style={{
-          position: "absolute",
-          left: "16px",
-          bottom: "16px",
+          position: "fixed",
+          left: "calc(16px + env(safe-area-inset-left))",
+          bottom: "calc(16px + env(safe-area-inset-bottom))",
           padding: "8px 12px",
           background: "rgba(15, 23, 42, 0.9)",
           color: "#e2e8f0",
           border: "1px solid #1e40af",
           borderRadius: "8px",
           cursor: "pointer",
-          zIndex: 12,
+          zIndex: 30,
         }}
       >
         Ver presentacion
