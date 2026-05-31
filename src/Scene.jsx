@@ -10,7 +10,18 @@ import NeighborhoodMap from "./components/Map.jsx";
 import Truck from "./components/Truck.jsx";
 import Neighbor from "./components/Neighbor.jsx";
 import RecyclingCenter from "./components/RecyclingCenter.jsx";
+import Tree from "./components/Tree.jsx";
 import { NEIGHBOR_POSITIONS } from "./App.jsx";
+
+const TREE_POSITIONS = [
+  { id: "t1", position: [-4.5, 0, -4.2], scale: 1 },
+  { id: "t2", position: [-2.8, 0, -4.3], scale: 0.9 },
+  { id: "t3", position: [-4.2, 0, -2.4], scale: 1.1 },
+  { id: "t4", position: [4.2, 0, 4.3], scale: 1 },
+  { id: "t5", position: [2.6, 0, 4.1], scale: 0.85 },
+  { id: "t6", position: [4.4, 0, 2.2], scale: 1.05 },
+  { id: "t8", position: [0.6, 0, -3.6], scale: 0.9 },
+];
 
 export default function Scene({
   playing,
@@ -62,6 +73,11 @@ export default function Scene({
           />
         );
       })}
+
+      {/* ── Arboles en cuadrantes vacios ── */}
+      {TREE_POSITIONS.map((tree) => (
+        <Tree key={tree.id} position={tree.position} scale={tree.scale} />
+      ))}
 
       {/* ── Controles de órbita para rotar/zoom con mouse ── */}
       <OrbitControls

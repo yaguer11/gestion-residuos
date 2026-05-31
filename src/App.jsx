@@ -18,13 +18,13 @@ const initialDumps = NEIGHBOR_POSITIONS.map((n) => ({
 }));
 export default function App() {
   // Control de la simulación
-  const [playing, setPlaying] = useState(false);
-  const [speed, setSpeed] = useState(1);
+  const [playing, setPlaying] = useState(true);
+  const [speed, setSpeed] = useState(1.6);
   const [panelOpen, setPanelOpen] = useState(false);
   const [showIntro, setShowIntro] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
-  const [autoNotify, setAutoNotify] = useState(false);
-  const [autoInterval, setAutoInterval] = useState(15);
+  const [autoNotify, setAutoNotify] = useState(true);
+  const [autoInterval, setAutoInterval] = useState(10);
 
   // Estado de los microbasurales
   const [dumps, setDumps] = useState(initialDumps);
@@ -220,24 +220,26 @@ export default function App() {
       />
 
       {/* ── Boton de presentacion ── */}
-      <button
-        type="button"
-        onClick={() => setShowIntro(true)}
-        style={{
-          position: "fixed",
-          left: "calc(16px + env(safe-area-inset-left))",
-          bottom: "calc(16px + env(safe-area-inset-bottom))",
-          padding: "8px 12px",
-          background: "rgba(15, 23, 42, 0.9)",
-          color: "#e2e8f0",
-          border: "1px solid #1e40af",
-          borderRadius: "8px",
-          cursor: "pointer",
-          zIndex: 30,
-        }}
-      >
-        Ver presentacion
-      </button>
+      {!showIntro && (
+        <button
+          type="button"
+          onClick={() => setShowIntro(true)}
+          style={{
+            position: "fixed",
+            left: "calc(16px + env(safe-area-inset-left))",
+            bottom: "calc(16px + env(safe-area-inset-bottom))",
+            padding: "8px 12px",
+            background: "rgba(15, 23, 42, 0.9)",
+            color: "#e2e8f0",
+            border: "1px solid #1e40af",
+            borderRadius: "8px",
+            cursor: "pointer",
+            zIndex: 30,
+          }}
+        >
+          Ver presentacion
+        </button>
+      )}
 
       {/* ── Modal de presentacion ── */}
       {showIntro && (
