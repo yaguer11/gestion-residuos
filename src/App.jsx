@@ -12,6 +12,8 @@ import OperacionalizacionModal from "./components/OperacionalizacionModal.jsx";
 import CuestionarioLikert from "./components/CuestionarioLikert.jsx";
 import { PRESENTATION_SLIDES } from "./data/presentationSlides.js";
 import { Presentation, FileDown } from "lucide-react";
+import pdfTrabajoFinal from "../src/assets/trabajo-final-german-adrian-munoz.pdf";
+
 // ─── Posiciones iniciales de los vecinos en el plano XZ ───────────────────────
 export const NEIGHBOR_POSITIONS = [
   { id: 1, name: "Juan", x: -3.3, z: -0.6, color: "#1c6294" },
@@ -340,7 +342,7 @@ export default function App() {
 
       {/* ── Boton de descarga del trabajo final ── */}
       <a
-        href={`${import.meta.env.BASE_URL}trabajo-final-german-adrian-munoz.pdf?v=${import.meta.env.VITE_BUILD_TIME ?? Date.now()}`}
+        href={pdfTrabajoFinal}
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -361,8 +363,8 @@ export default function App() {
           gap: "6px",
         }}
       >
-          <FileDown size={16} style={{ flexShrink: 0 }} />
-          Trabajo Final
+        <FileDown size={16} style={{ flexShrink: 0 }} />
+        Trabajo Final
       </a>
 
       {showIntro &&
