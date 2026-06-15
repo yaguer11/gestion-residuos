@@ -134,7 +134,7 @@ export const PRESENTATION_SLIDES = [
       {
         type: "hero",
         title: "Hipótesis de Trabajo",
-        text: "La ciudadanía de Villa Mercedes presenta un alto grado de aceptación hacia la implementación de una aplicación web de alertas vecinales, lo que a su vez produce una reducción en el volumen de trabajo y costos de los camiones municipales de refuerzo.",
+        text: "La ciudadanía de Villa Mercedes presenta un alto grado de aceptación hacia la implementación de una aplicación web de alertas vecinales enfocada en la gestión de residuos urbanos, como solución tecnológica frente a la desinformación actual sobre los horarios de recolección de los residuos, lo que a su vez producirá una reducción en el volumen de trabajo de los camiones municipales de refuerzo.",
       },
     ],
   },
