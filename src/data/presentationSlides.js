@@ -68,24 +68,34 @@ export const PRESENTATION_SLIDES = [
       {
         type: "hero",
         title: "Pregunta central del Trabajo Final",
-        text: "¿Qué grado de aceptación tendría una aplicación web de alertas vecinales enfocada en la gestión de residuos urbanos en los residentes de Villa Mercedes durante el año 2026?",
+        text: "¿Qué grado de aceptación tendría una aplicación web de alertas vecinales enfocada en la gestión de residuos urbanos en los residentes de Villa Mercedes y en qué medida su uso contribuye a la optimización del servicio de recolección durante el año 2026?",
       },
       {
         type: "schema",
         title: "Componentes de la pregunta",
         items: [
-          { label: "Palabra interrogativa", value: "¿Qué...?" },
           {
-            label: "Variable de estudio",
+            label: "Palabra interrogativa",
+            value: "¿Qué...? / ¿En qué medida...?",
+          },
+          {
+            label: "Variable Independiente (Causa)",
             value:
-              "Grado de aceptación de una aplicación web enfocada en la gestión de residuos urbanos",
+              "Implementación y uso de la aplicación web de alertas vecinales",
+          },
+          {
+            label: "Variables Dependientes (Efectos)",
+            value:
+              "Grado de aceptación ciudadana y Optimización del servicio de recolección",
           },
           {
             label: "Unidad de análisis",
             value: "Residentes de Villa Mercedes",
           },
-          { label: "Contexto espacial", value: "Villa Mercedes, San Luis" },
-          { label: "Contexto temporal", value: "Año 2026" },
+          {
+            label: "Contexto espaciotemporal",
+            value: "Villa Mercedes, San Luis (Año 2026)",
+          },
         ],
       },
       {
@@ -110,7 +120,7 @@ export const PRESENTATION_SLIDES = [
       {
         type: "hero",
         title: "Objetivo General",
-        text: "Analizar el grado de adopción de una plataforma tecnológica de alertas vecinales para la recolección de residuos urbanos y evaluar su impacto directo en la eficiencia operativa municipal en Villa Mercedes durante el año 2026.",
+        text: "Evaluar el grado de aceptación de una aplicación web de alertas vecinales enfocada en la gestión de residuos urbanos en los residentes de Villa Mercedes y determinar en qué medida su uso contribuye a la optimización del servicio de recolección durante el año 2026.",
       },
       {
         type: "list",
@@ -124,7 +134,7 @@ export const PRESENTATION_SLIDES = [
       {
         type: "hero",
         title: "Hipótesis de Trabajo",
-        text: "La ciudadanía de Villa Mercedes presenta un alto grado de aceptación hacia la implementación de una aplicación web de alertas vecinales para residuos urbanos como solución tecnológica frente a la desinformación actual sobre los horarios de recolección de residuos sólidos urbanos.",
+        text: "La ciudadanía de Villa Mercedes presenta un alto grado de aceptación hacia la implementación de una aplicación web de alertas vecinales, lo que a su vez produce una reducción en el volumen de trabajo y costos de los camiones municipales de refuerzo.",
       },
     ],
   },
@@ -193,15 +203,22 @@ export const PRESENTATION_SLIDES = [
         items: [
           {
             label: "Enfoque",
-            value: "Cuantitativo (busca medir valores numéricos objetivos)",
+            value: "Cuantitativo, busca medir valores numéricos objetivos",
           },
           {
             label: "Finalidad",
             value:
-              "Aplicada (orientada a resolver un problema concreto de desinformación)",
+              "Aplicada, orientada a resolver un problema concreto de desinformación",
           },
-          { label: "Alcance", value: "Descriptivo" },
-          { label: "Diseño", value: "No experimental, de campo y transversal" },
+          {
+            label: "Alcance",
+            value: "Explicativo, busca comprobar relaciones de causa-efecto",
+          },
+          {
+            label: "Diseño y Dimensión",
+            value:
+              "Cuasi-experimental y Longitudinal, medición del antes y después",
+          },
         ],
       },
       {
@@ -227,9 +244,9 @@ export const PRESENTATION_SLIDES = [
         type: "list",
         title: "Técnicas e Instrumentos",
         items: [
-          "Cuestionario estructurado basado en las dimensiones del Modelo TAM.",
-          "Escala de Likert de cinco puntos para la medición de las variables.",
-          "Recolección de datos primarios directamente en el contexto territorial acotado.",
+          "1. Cuestionario estructurado (Escala Likert) basado en el Modelo TAM.",
+          "2. Métricas de uso del sistema (Analítica de adopción y retención de la app).",
+          "3. Métricas de impacto operativo (Tiempos de camiones de refuerzo antes/después).",
         ],
       },
     ],

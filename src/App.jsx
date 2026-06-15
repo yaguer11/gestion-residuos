@@ -9,7 +9,9 @@ import ControlPanel from "./ui/ControlPanel.jsx";
 import PresentationModal from "./components/PresentationModal.jsx";
 import ConceptMapModal from "./components/ConceptMapModal.jsx";
 import OperacionalizacionModal from "./components/OperacionalizacionModal.jsx";
+import CuestionarioLikert from "./components/CuestionarioLikert.jsx";
 import { PRESENTATION_SLIDES } from "./data/presentationSlides.js";
+import { Presentation, FileDown } from "lucide-react";
 // ─── Posiciones iniciales de los vecinos en el plano XZ ───────────────────────
 export const NEIGHBOR_POSITIONS = [
   { id: 1, name: "Juan", x: -3.3, z: -0.6, color: "#1c6294" },
@@ -39,6 +41,7 @@ export default function App() {
   const [showIntro, setShowIntro] = useState(false);
   const [showConceptMap, setShowConceptMap] = useState(false);
   const [showOperacionalizacion, setShowOperacionalizacion] = useState(false);
+  const [showLikert, setShowLikert] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
   const [revealIndex, setRevealIndex] = useState(-1);
   const [autoNotify, setAutoNotify] = useState(true);
@@ -247,7 +250,7 @@ export default function App() {
         <span
           style={{
             fontSize: "12px",
-            fontWeight: 500,
+            fontWeight: 600,
             lineHeight: 1.35,
             color: "#94a3b8",
             letterSpacing: "0.01em",
@@ -311,8 +314,12 @@ export default function App() {
             borderRadius: "8px",
             cursor: "pointer",
             zIndex: 30,
+            display: "flex",
+            alignItems: "center",
+            gap: "6px",
           }}
         >
+          <Presentation size={16} style={{ flexShrink: 0 }} />
           Presentacion
         </button>
       )}
@@ -325,6 +332,10 @@ export default function App() {
         <OperacionalizacionModal
           onClose={() => setShowOperacionalizacion(false)}
         />
+      )}
+
+      {showLikert && (
+        <CuestionarioLikert onClose={() => setShowLikert(false)} />
       )}
 
       {/* ── Boton de descarga del trabajo final ── */}
@@ -345,31 +356,39 @@ export default function App() {
           zIndex: 30,
           textDecoration: "none",
           fontSize: "14px",
+          display: "flex",
+          alignItems: "center",
+          gap: "6px",
         }}
       >
-        Trabajo Final
+          <FileDown size={16} style={{ flexShrink: 0 }} />
+          Trabajo Final
       </a>
 
-      {showIntro && !showConceptMap && !showOperacionalizacion && (
-        <PresentationModal
-          slide={activeSlide}
-          slideIndex={slideIndex}
-          revealIndex={activeDynamicIndex}
-          hasDynamicStep={dynamicStepsCount > 0}
-          visibleBlocks={visibleBlocks}
-          totalSteps={totalSteps}
-          atLastStep={atLastStep}
-          atEnd={atEnd}
-          progress={progress}
-          onNextBlock={handleNextBlock}
-          onPrevBlock={handlePrevBlock}
-          onNextSlide={handleNextSlide}
-          onPrev={handlePrev}
-          onClose={() => setShowIntro(false)}
-          onOpenConceptMap={() => setShowConceptMap(true)}
-          onOpenOperacionalizacion={() => setShowOperacionalizacion(true)}
-        />
-      )}
+      {showIntro &&
+        !showConceptMap &&
+        !showOperacionalizacion &&
+        !showLikert && (
+          <PresentationModal
+            slide={activeSlide}
+            slideIndex={slideIndex}
+            revealIndex={activeDynamicIndex}
+            hasDynamicStep={dynamicStepsCount > 0}
+            visibleBlocks={visibleBlocks}
+            totalSteps={totalSteps}
+            atLastStep={atLastStep}
+            atEnd={atEnd}
+            progress={progress}
+            onNextBlock={handleNextBlock}
+            onPrevBlock={handlePrevBlock}
+            onNextSlide={handleNextSlide}
+            onPrev={handlePrev}
+            onClose={() => setShowIntro(false)}
+            onOpenConceptMap={() => setShowConceptMap(true)}
+            onOpenOperacionalizacion={() => setShowOperacionalizacion(true)}
+            onOpenLikert={() => setShowLikert(true)}
+          />
+        )}
     </div>
   );
 }

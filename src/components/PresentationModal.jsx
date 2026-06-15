@@ -184,6 +184,7 @@ export default function PresentationModal({
   onClose,
   onOpenConceptMap,
   onOpenOperacionalizacion,
+  onOpenLikert,
 }) {
   const fixedStep = slide.steps[0];
   const dynamicSteps = slide.steps.slice(1);
@@ -433,7 +434,7 @@ export default function PresentationModal({
           </div>
         )}
 
-        {/* Botón operacionalización — solo en la lámina "Marco teórico" */}
+        {/* Botón TAM — solo en la lámina "Marco teórico" */}
         {slide.key === "marco" && onOpenOperacionalizacion && (
           <div style={{ marginTop: "10px" }}>
             <button
@@ -451,6 +452,28 @@ export default function PresentationModal({
               }}
             >
               TAM
+            </button>
+          </div>
+        )}
+
+        {/* Botón Likert — solo en la lámina "Marco metodológico" */}
+        {slide.key === "metodo" && onOpenLikert && (
+          <div style={{ marginTop: "10px" }}>
+            <button
+              type="button"
+              onClick={onOpenLikert}
+              style={{
+                padding: "8px 14px",
+                background: "#f0fdf4",
+                color: "#15803d",
+                border: "1px solid #bbf7d0",
+                borderRadius: "8px",
+                cursor: "pointer",
+                fontWeight: 600,
+                fontSize: 13,
+              }}
+            >
+              Likert
             </button>
           </div>
         )}

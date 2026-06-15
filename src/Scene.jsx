@@ -35,7 +35,7 @@ export default function Scene({
   return (
     <Canvas
       style={{ width: "100%", height: "100%" }}
-      camera={{ position: [0, 10, 8], fov: 45 }}
+      camera={{ position: [0.42, 2.67, 9.53], fov: 45 }}
       shadows
     >
       {/* ── Iluminación ── */}
@@ -90,6 +90,12 @@ export default function Scene({
         maxPolarAngle={Math.PI / 2.2}
         minDistance={4}
         maxDistance={20}
+        // onChange={(e) => {
+        //   const p = e.target.object.position;
+        //   console.log(
+        //     `[Camera] position: [${p.x.toFixed(2)}, ${p.y.toFixed(2)}, ${p.z.toFixed(2)}]`,
+        //   );
+        // }}
       />
     </Canvas>
   );

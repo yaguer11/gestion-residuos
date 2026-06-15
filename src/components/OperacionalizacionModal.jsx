@@ -16,9 +16,12 @@ const BRANCHES = [
     title: "2. Ítem del Cuestionario",
     formula: "CÓDIGO + AFIRMACIÓN EMPÍRICA",
     leaves: [
-      "UP1: «Usar la app me permite sacar la basura a la hora exacta»",
-      "UP2: «Gracias a la app, evito que la basura se acumule en mi vereda»",
-      "FUP1: «Interactuar con la aplicación es intuitivo y sencillo»",
+      "UP1: «Creo que la app me ayudará a saber exactamente a qué hora pasa el camión por mi barrio»",
+      "UP2: «Pienso que usar la aplicación haría que mi cuadra y mi barrio se mantengan más limpios»",
+      "UP3: «Considero que la app me sería útil para no sacar la basura en horarios en que todavía no pasa el camión»",
+      "FU1: «Me resultaría fácil aprender a usar la aplicación de alertas»",
+      "FU2: «Me imagino que manejar la app sería sencillo y no me llevaría mucho tiempo»",
+      "FU3: «Creo que las pantallas y los avisos de la aplicación serían claros y fáciles de entender»",
     ],
   },
   {
