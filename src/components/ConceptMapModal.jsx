@@ -136,41 +136,42 @@ export default function ConceptMapModal({ onClose }) {
         paddingBottom: isSmallScreen ? 0 : 72,
       }}
     >
-      {/* ── Cerrar ── */}
-      <button
-        onClick={onClose}
-        style={{
-          position: isSmallScreen ? "sticky" : "fixed",
-          top: 16,
-          right: isSmallScreen ? undefined : 16,
-          alignSelf: isSmallScreen ? "flex-end" : undefined,
-          marginRight: isSmallScreen ? 16 : undefined,
-          zIndex: 52,
-          width: 36,
-          height: 36,
-          flexShrink: 0,
-          background: "rgba(15,23,42,0.9)",
-          border: "1px solid rgba(59,130,246,0.4)",
-          borderRadius: 8,
-          color: "#e2e8f0",
-          fontSize: 16,
-          cursor: "pointer",
-        }}
-      >
-        ✕
-      </button>
+      {/* ── Cerrar (desktop) ── */}
+      {!isSmallScreen && (
+        <button
+          onClick={onClose}
+          style={{
+            position: "fixed",
+            top: 16,
+            right: 16,
+            zIndex: 52,
+            width: 36,
+            height: 36,
+            background: "rgba(15,23,42,0.9)",
+            border: "1px solid rgba(59,130,246,0.4)",
+            borderRadius: 8,
+            color: "#e2e8f0",
+            fontSize: 16,
+            cursor: "pointer",
+          }}
+        >
+          ✕
+        </button>
+      )}
 
-      <p
-        style={{
-          color: "#475569",
-          fontSize: 11,
-          letterSpacing: "0.08em",
-          textTransform: "uppercase",
-          margin: "20px 0 0",
-        }}
-      >
-        RELACIÓN ENTRE PROBLEMA, OBJETIVOS E HIPÓTESIS DE INVESTIGACIÓN
-      </p>
+      {!isSmallScreen && (
+        <p
+          style={{
+            color: "#475569",
+            fontSize: 11,
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            margin: "20px 0 0",
+          }}
+        >
+          RELACIÓN ENTRE PROBLEMA, OBJETIVOS E HIPÓTESIS DE INVESTIGACIÓN
+        </p>
+      )}
 
       <div
         style={{
@@ -437,23 +438,64 @@ export default function ConceptMapModal({ onClose }) {
           alignItems: "center",
         }}
       >
-        <button
-          style={btnStyle(step <= 0)}
-          disabled={step <= 0}
-          onClick={() => setStep((s) => Math.max(s - 1, 0))}
-        >
-          ← Anterior
-        </button>
-        <span style={{ color: "#64748b", fontSize: 12 }}>
-          {step}/{MAX_STEP}
-        </span>
-        <button
-          style={btnStyle(step >= MAX_STEP)}
-          disabled={step >= MAX_STEP}
-          onClick={() => setStep((s) => Math.min(s + 1, MAX_STEP))}
-        >
-          Siguiente →
-        </button>
+        {isSmallScreen ? (
+          <>
+            <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+              <button
+                onClick={onClose}
+                style={{
+                  width: 36,
+                  height: 36,
+                  background: "rgba(15,23,42,0.9)",
+                  border: "1px solid rgba(59,130,246,0.4)",
+                  borderRadius: 8,
+                  color: "#e2e8f0",
+                  fontSize: 16,
+                  cursor: "pointer",
+                }}
+              >
+                ✕
+              </button>
+              <button
+                style={btnStyle(step <= 0)}
+                disabled={step <= 0}
+                onClick={() => setStep((s) => Math.max(s - 1, 0))}
+              >
+                ← Ant
+              </button>
+            </div>
+            <span style={{ color: "#64748b", fontSize: 12 }}>
+              {step}/{MAX_STEP}
+            </span>
+            <button
+              style={btnStyle(step >= MAX_STEP)}
+              disabled={step >= MAX_STEP}
+              onClick={() => setStep((s) => Math.min(s + 1, MAX_STEP))}
+            >
+              Sig →
+            </button>
+          </>
+        ) : (
+          <>
+            <button
+              style={btnStyle(step <= 0)}
+              disabled={step <= 0}
+              onClick={() => setStep((s) => Math.max(s - 1, 0))}
+            >
+              ← Anterior
+            </button>
+            <span style={{ color: "#64748b", fontSize: 12 }}>
+              {step}/{MAX_STEP}
+            </span>
+            <button
+              style={btnStyle(step >= MAX_STEP)}
+              disabled={step >= MAX_STEP}
+              onClick={() => setStep((s) => Math.min(s + 1, MAX_STEP))}
+            >
+              Siguiente →
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
