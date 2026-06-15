@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de la Presentación — Simulación RSU</title>
+    <style>
+      /* ── Fuente ── */
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        font-size: 11pt;
+        color: #0f172a;
+        background: #fff;
+        line-height: 1.55;
+      }
+
+      /* ── Página A4 ── */
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 18mm 18mm 14mm;
+      }
+
+      /* ── Encabezado ── */
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        border-bottom: 2px solid #1d4ed8;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+      }
+      .header img {
+        height: 42px;
+        width: auto;
+      }
+      .header-text h1 {
+        font-size: 14pt;
+        font-weight: 700;
+        color: #0f172a;
+        line-height: 1.25;
+      }
+      .header-text p {
+        font-size: 9pt;
+        color: #475569;
+        margin-top: 2px;
+      }
+      .header-meta {
+        margin-left: auto;
+        text-align: right;
+        font-size: 9pt;
+        color: #64748b;
+        line-height: 1.6;
+      }
+
+      /* ── Secciones ── */
+      .section {
+        margin-bottom: 22px;
+      }
+      .section-title {
+        font-size: 10pt;
+        font-weight: 700;
+        color: #1d4ed8;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #bfdbfe;
+      }
+
+      /* ── Caja de captura de pantalla ── */
+      .screenshot-box {
+        width: 100%;
+        height: 72mm;
+        border: 1.5px dashed #94a3b8;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #f8fafc;
+        color: #94a3b8;
+        font-size: 9pt;
+        gap: 6px;
+      }
+      .screenshot-box svg {
+        opacity: 0.4;
+      }
+      .screenshot-box span {
+        font-weight: 600;
+        color: #64748b;
+        font-size: 10pt;
+      }
+      .screenshot-box small {
+        font-size: 8pt;
+        color: #94a3b8;
+      }
+
+      /* ── Cuadro de navegación ── */
+      .nav-box {
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 10px;
+        padding: 14px 16px;
+      }
+      .nav-box p {
+        margin-bottom: 6px;
+      }
+      .nav-box p:last-child {
+        margin-bottom: 0;
+      }
+      .badge {
+        display: inline-block;
+        padding: 1px 7px;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: 9pt;
+        margin: 0 2px;
+      }
+      .badge-blue {
+        background: #dbeafe;
+        color: #1d4ed8;
+      }
+      .badge-green {
+        background: #dcfce7;
+        color: #15803d;
+      }
+
+      /* ── Tabla de láminas ── */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 9.5pt;
+      }
+      th {
+        background: #1e3a8a;
+        color: #fff;
+        padding: 6px 10px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 9pt;
+      }
+      td {
+        padding: 6px 10px;
+        border-bottom: 1px solid #e2e8f0;
+        vertical-align: top;
+      }
+      tr:nth-child(even) td {
+        background: #f8fafc;
+      }
+      td:first-child {
+        font-weight: 700;
+        color: #1d4ed8;
+        white-space: nowrap;
+      }
+      td:nth-child(2) {
+        white-space: nowrap;
+      }
+
+      /* ── Imagen mapa conceptual ── */
+      .img-box {
+        width: 100%;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 6px;
+      }
+      .img-box img {
+        width: 100%;
+        display: block;
+      }
+      .img-caption {
+        font-size: 8pt;
+        color: #64748b;
+        text-align: center;
+        margin-top: 4px;
+      }
+
+      /* ── Columnas ── */
+      .two-col {
+        display: flex;
+        gap: 14px;
+      }
+      .two-col > * {
+        flex: 1;
+      }
+
+      /* ── Footer ── */
+      .footer {
+        margin-top: 24px;
+        padding-top: 10px;
+        border-top: 1px solid #e2e8f0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 8pt;
+        color: #94a3b8;
+      }
+
+      /* ── Impresión ── */
+      @media print {
+        body {
+          background: #fff;
+        }
+        .page {
+          padding: 12mm 16mm 10mm;
+        }
+        .screenshot-box {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        table th {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .nav-box {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .page-break {
+          page-break-before: always;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- ── ENCABEZADO ── -->
+      <div class="header">
+        <div class="header-text">
+          <h1>
+            Simulación de Gestión de Residuos Urbanos<br />con Alertas Vecinales
+          </h1>
+          <p>
+            Metodología de la Investigación — Guía de la presentación
+            interactiva
+          </p>
+        </div>
+        <div class="header-meta">
+          Alum. Germán Adrián Muñoz<br />
+          Prof. Helga Myrna Blanco<br />
+          UNVIME · 2026
+        </div>
+      </div>
+
+      <!-- ── LINK ACCESO ── -->
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:10px 16px; margin-bottom:20px; display:flex; align-items:center; gap:12px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" style="flex-shrink:0"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <div>
+          <span style="font-size:9pt; font-weight:700; color:#1e3a8a;">Acceso a la simulación online:</span>
+          <a href="https://yaguer11.github.io/gestion-residuos/" style="font-size:9pt; color:#1d4ed8; font-weight:600; margin-left:6px;">https://yaguer11.github.io/gestion-residuos/</a>
+        </div>
+      </div>
+
+      <!-- ── SECCIÓN 1: SIMULACIÓN ── -->
+      <div class="section">
+        <div class="section-title">1 · Simulación 3D</div>
+        <p style="font-size: 9.5pt; color: #475569; margin-bottom: 8px">
+          Al ingresar a la aplicación se ve una escena 3D de Villa Mercedes con
+          un camión de recolección que circula por las calles, vecinos, casas y
+          microbasurales que aparecen cuando los residentes sacan la basura.
+        </p>
+        <div class="img-box">
+          <img src="./capturaUno.png" alt="Captura — Simulación 3D" />
+        </div>
+      </div>
+
+      <!-- ── SECCIÓN 2: PRESENTACIÓN ── -->
+      <div class="section">
+        <div class="section-title">2 · Presentación interactiva</div>
+        <p style="font-size: 9.5pt; color: #475569; margin-bottom: 8px">
+          La presentación se superpone sobre la simulación como un modal
+          flotante. Cada lámina muestra el título, etiquetas temáticas y los
+          bloques de contenido que se revelan progresivamente. Los botones de la
+          parte inferior permiten moverse entre láminas y bloques.
+        </p>
+        <div class="img-box">
+          <img src="./capturaDos.png" alt="Captura — Modal de presentación" />
+        </div>
+      </div>
+
+      <!-- ── SALTO DE PÁGINA ── -->
+      <div class="page-break"></div>
+
+      <!-- ── SECCIÓN 3: CÓMO NAVEGAR ── -->
+      <div class="section">
+        <div class="section-title">3 · Cómo navegar la presentación</div>
+        <div class="nav-box">
+          <p>
+            Para ver la presentación hay que ir al botón
+            <span class="badge badge-blue">Presentación</span>
+            ubicado en la esquina inferior izquierda de la pantalla.
+          </p>
+          <p>
+            Con los botones <span class="badge badge-blue">Anterior</span> y
+            <span class="badge badge-blue">Siguiente lámina</span> que aparecen
+            abajo se puede mover entre las distintas láminas. Dentro de cada
+            lámina, las flechas <span class="badge badge-blue">←</span>
+            <span class="badge badge-blue">→</span>
+            muestran los bloques de contenido de forma progresiva.
+          </p>
+          <p>En algunas láminas aparecen botones adicionales:</p>
+          <p>
+            · <span class="badge badge-blue">Componentes</span> — abre el mapa
+            conceptual de la relación entre problema, objetivos e hipótesis
+            (también se navega con Anterior&nbsp;/&nbsp;Siguiente).
+          </p>
+          <p>
+            · <span class="badge badge-blue">TAM</span> — muestra el modelo de
+            operacionalización de variables según el Modelo de Aceptación
+            Tecnológica.
+          </p>
+          <p>
+            · <span class="badge badge-green">Likert</span> — muestra el
+            cuestionario de aceptación tecnológica con escala de 1 a 5.
+          </p>
+        </div>
+      </div>
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <span
+          >Germán Adrián Muñoz · UNVIME · Metodología de la Investigación ·
+          2026</span
+        >
+        <span>Prof. Helga Myrna Blanco</span>
+      </div>
+    </div>
+  </body>
+</html>
