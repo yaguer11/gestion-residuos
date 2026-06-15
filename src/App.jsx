@@ -342,7 +342,9 @@ export default function App() {
 
       {/* ── Boton de descarga del trabajo final ── */}
       <a
-        href={pdfTrabajoFinal}
+        href={
+          "https://drive.google.com/file/d/1fPl2mOrjVjLzBvE_Mc1MNNPpSRFKD3za/view?usp=drive_link"
+        }
         target="_blank"
         rel="noopener noreferrer"
         style={{
