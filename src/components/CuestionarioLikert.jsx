@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const LIKERT_OPTIONS = [
   { value: 1, label: "Totalmente en desacuerdo" },
@@ -37,6 +37,14 @@ const QUESTIONS = [
 
 export default function CuestionarioLikert({ onClose }) {
   const [respuestas, setRespuestas] = useState({});
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    () => window.innerWidth < 640,
+  );
+  useEffect(() => {
+    const handleResize = () => setIsSmallScreen(window.innerWidth < 640);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleSelect = (qId, value) => {
     setRespuestas((prev) => ({ ...prev, [qId]: value }));
@@ -55,8 +63,9 @@ export default function CuestionarioLikert({ onClose }) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        justifyContent: isSmallScreen ? "center" : "flex-start",
         overflowY: "auto",
-        padding: "20px 16px 40px",
+        padding: isSmallScreen ? "12px 0" : "20px 16px 40px",
       }}
     >
       {/* ── Cerrar ── */}
@@ -86,7 +95,11 @@ export default function CuestionarioLikert({ onClose }) {
           fontSize: 11,
           letterSpacing: "0.08em",
           textTransform: "uppercase",
-          margin: "0 0 16px 0",
+          margin: isSmallScreen ? "0 0 10px 0" : "0 0 16px 0",
+          width: isSmallScreen ? "100%" : undefined,
+          textAlign: isSmallScreen ? "center" : undefined,
+          padding: isSmallScreen ? "0 10px" : undefined,
+          boxSizing: isSmallScreen ? "border-box" : undefined,
         }}
       >
         INSTRUMENTO DE RECOLECCIÓN DE DATOS
@@ -95,8 +108,10 @@ export default function CuestionarioLikert({ onClose }) {
       {/* ── Recuadro principal ── */}
       <div
         style={{
-          width: "100%",
+          width: isSmallScreen ? "calc(100% - 20px)" : "100%",
           maxWidth: 860,
+          marginLeft: isSmallScreen ? "auto" : undefined,
+          marginRight: isSmallScreen ? "auto" : undefined,
           background:
             "linear-gradient(135deg,rgba(15,23,42,0.97) 0%,rgba(30,58,138,0.75) 100%)",
           border: "1.5px solid rgba(59,130,246,0.45)",
@@ -110,27 +125,27 @@ export default function CuestionarioLikert({ onClose }) {
         <div
           style={{
             textAlign: "center",
-            padding: "20px 24px 16px",
+            padding: isSmallScreen ? "12px 14px 10px" : "20px 24px 16px",
             borderBottom: "1px solid rgba(59,130,246,0.3)",
           }}
         >
           <h2
             style={{
-              fontSize: 15,
+              fontSize: isSmallScreen ? 12 : 15,
               fontWeight: 700,
               color: "#bfdbfe",
-              margin: "0 0 6px 0",
+              margin: "0 0 4px 0",
               letterSpacing: "0.03em",
             }}
           >
             Cuestionario de Aceptación Tecnológica
           </h2>
-          <p style={{ fontSize: 13, color: "#94a3b8", margin: 0 }}>
+          <p style={{ fontSize: isSmallScreen ? 10 : 13, color: "#94a3b8", margin: 0 }}>
             Indique su grado de acuerdo con las siguientes afirmaciones (1 al 5)
           </p>
         </div>
 
-        <div style={{ padding: "16px 20px 20px" }}>
+        <div style={{ padding: isSmallScreen ? "10px 12px 14px" : "16px 20px 20px" }}>
           {/* ── Leyenda ── */}
           <div
             style={{
@@ -138,8 +153,8 @@ export default function CuestionarioLikert({ onClose }) {
               justifyContent: "space-between",
               background: "rgba(15,23,42,0.6)",
               borderRadius: 8,
-              padding: "10px 16px",
-              marginBottom: 10,
+              padding: isSmallScreen ? "6px 10px" : "10px 16px",
+              marginBottom: 8,
               border: "1px solid rgba(59,130,246,0.2)",
             }}
           >
@@ -156,19 +171,21 @@ export default function CuestionarioLikert({ onClose }) {
               >
                 <span
                   style={{
-                    fontSize: 12,
+                    fontSize: isSmallScreen ? 10 : 12,
                     fontWeight: 800,
                     color: "#60a5fa",
-                    marginBottom: 2,
+                    marginBottom: isSmallScreen ? 0 : 2,
                   }}
                 >
                   {opt.value}
                 </span>
-                <span
-                  style={{ fontSize: 10, color: "#cbd5e1", lineHeight: 1.2 }}
-                >
-                  {opt.label}
-                </span>
+                {!isSmallScreen && (
+                  <span
+                    style={{ fontSize: 10, color: "#cbd5e1", lineHeight: 1.2 }}
+                  >
+                    {opt.label}
+                  </span>
+                )}
               </div>
             ))}
           </div>
@@ -189,31 +206,31 @@ export default function CuestionarioLikert({ onClose }) {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-between",
-                  padding: "6px 16px",
+                  padding: isSmallScreen ? "5px 8px" : "6px 16px",
                   background: respuestas[q.id]
                     ? "rgba(59,130,246,0.15)"
                     : "rgba(30,41,59,0.4)",
                   border: `1px solid ${respuestas[q.id] ? "rgba(59,130,246,0.5)" : "rgba(59,130,246,0.1)"}`,
                   borderRadius: 8,
                   transition: "all 0.3s ease",
-                  gap: 12,
+                  gap: isSmallScreen ? 6 : 12,
                 }}
               >
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <span
                     style={{
                       display: "inline-block",
-                      width: 38,
+                      width: isSmallScreen ? 28 : 38,
                       fontWeight: 700,
                       color: "#fbbf24",
-                      fontSize: 12,
+                      fontSize: isSmallScreen ? 10 : 12,
                     }}
                   >
                     {q.id}
                   </span>
                   <span
                     style={{
-                      fontSize: 13,
+                      fontSize: isSmallScreen ? 10 : 13,
                       color: respuestas[q.id] ? "#f1f5f9" : "#cbd5e1",
                     }}
                   >
@@ -221,7 +238,7 @@ export default function CuestionarioLikert({ onClose }) {
                   </span>
                 </div>
 
-                <div style={{ display: "flex", gap: 14, flexShrink: 0 }}>
+                <div style={{ display: "flex", gap: isSmallScreen ? 6 : 14, flexShrink: 0 }}>
                   {LIKERT_OPTIONS.map((opt) => {
                     const isSelected = respuestas[q.id] === opt.value;
                     return (
@@ -229,8 +246,8 @@ export default function CuestionarioLikert({ onClose }) {
                         key={opt.value}
                         onClick={() => handleSelect(q.id, opt.value)}
                         style={{
-                          width: 26,
-                          height: 26,
+                          width: isSmallScreen ? 20 : 26,
+                          height: isSmallScreen ? 20 : 26,
                           borderRadius: "50%",
                           border: `2px solid ${isSelected ? "#60a5fa" : "#475569"}`,
                           background: isSelected ? "#3b82f6" : "transparent",
@@ -249,7 +266,7 @@ export default function CuestionarioLikert({ onClose }) {
                           <span
                             style={{
                               color: "#fff",
-                              fontSize: 11,
+                              fontSize: isSmallScreen ? 9 : 11,
                               fontWeight: 800,
                             }}
                           >

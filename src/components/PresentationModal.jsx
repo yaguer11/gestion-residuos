@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function renderStep(step, index) {
   const stepCardBase = {
@@ -186,6 +186,15 @@ export default function PresentationModal({
   onOpenOperacionalizacion,
   onOpenLikert,
 }) {
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    () => window.innerWidth < 640,
+  );
+  useEffect(() => {
+    const handleResize = () => setIsSmallScreen(window.innerWidth < 640);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const fixedStep = slide.steps[0];
   const dynamicSteps = slide.steps.slice(1);
   const activeDynamicStep =
@@ -246,17 +255,18 @@ export default function PresentationModal({
         className="intro-card"
         onClick={handleCardClick}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: isSmallScreen ? "8px" : "12px" }}>
           <div
             style={{
-              width: "44px",
-              height: "44px",
+              width: isSmallScreen ? "32px" : "44px",
+              height: isSmallScreen ? "32px" : "44px",
               borderRadius: "12px",
               display: "grid",
               placeItems: "center",
               background: "rgba(59, 130, 246, 0.12)",
               border: "1px solid rgba(59, 130, 246, 0.35)",
-              fontSize: "22px",
+              fontSize: isSmallScreen ? "16px" : "22px",
+              flexShrink: 0,
             }}
           >
             {slide.icon}
@@ -264,7 +274,7 @@ export default function PresentationModal({
           <div>
             <div
               style={{
-                fontSize: "20px",
+                fontSize: isSmallScreen ? "15px" : "20px",
                 fontWeight: 700,
                 letterSpacing: "0.02em",
                 fontFamily: "'Space Grotesk', 'Rubik', sans-serif",
@@ -274,7 +284,7 @@ export default function PresentationModal({
             </div>
             <div
               style={{
-                fontSize: "13px",
+                fontSize: isSmallScreen ? "10px" : "13px",
                 color: "#475569",
                 fontFamily: "'Space Grotesk', 'Rubik', sans-serif",
               }}
@@ -287,13 +297,13 @@ export default function PresentationModal({
               marginLeft: "auto",
               display: "grid",
               justifyItems: "end",
-              gap: "6px",
+              gap: isSmallScreen ? "4px" : "6px",
             }}
           >
             <div
               style={{
                 display: "flex",
-                gap: "6px",
+                gap: "4px",
                 flexWrap: "wrap",
                 justifyContent: "flex-end",
               }}
@@ -302,11 +312,11 @@ export default function PresentationModal({
                 <span
                   key={tag}
                   style={{
-                    padding: "4px 10px",
+                    padding: isSmallScreen ? "2px 6px" : "4px 10px",
                     borderRadius: "999px",
                     background: "rgba(148, 163, 184, 0.2)",
                     border: "1px solid rgba(148, 163, 184, 0.5)",
-                    fontSize: "11px",
+                    fontSize: isSmallScreen ? "9px" : "11px",
                     color: "#1e293b",
                     textTransform: "uppercase",
                     letterSpacing: "0.08em",
@@ -316,12 +326,12 @@ export default function PresentationModal({
                 </span>
               ))}
             </div>
-            <div style={{ fontSize: "11px", color: "#64748b" }}>
+            <div style={{ fontSize: isSmallScreen ? "9px" : "11px", color: "#64748b" }}>
               {visibleBlocks} / {totalSteps}
             </div>
             <div
               style={{
-                width: "140px",
+                width: isSmallScreen ? "90px" : "140px",
                 height: "6px",
                 borderRadius: "999px",
                 background: "rgba(148, 163, 184, 0.35)",

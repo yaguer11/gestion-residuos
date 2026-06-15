@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const BRANCHES = [
   {
@@ -104,6 +104,14 @@ function btnStyle(disabled) {
 
 export default function OperacionalizacionModal({ onClose }) {
   const [step, setStep] = useState(0);
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    () => window.innerWidth < 640,
+  );
+  useEffect(() => {
+    const handleResize = () => setIsSmallScreen(window.innerWidth < 640);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div
@@ -115,21 +123,24 @@ export default function OperacionalizacionModal({ onClose }) {
         backdropFilter: "blur(5px)",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        overflowY: "auto",
-        paddingBottom: 72,
+        alignItems: isSmallScreen ? "flex-start" : "center",
+        overflow: "auto",
+        paddingBottom: isSmallScreen ? 0 : 72,
       }}
     >
       {/* ── Cerrar ── */}
       <button
         onClick={onClose}
         style={{
-          position: "fixed",
+          position: isSmallScreen ? "sticky" : "fixed",
           top: 16,
-          right: 16,
+          right: isSmallScreen ? undefined : 16,
+          alignSelf: isSmallScreen ? "flex-end" : undefined,
+          marginRight: isSmallScreen ? 16 : undefined,
           zIndex: 52,
           width: 36,
           height: 36,
+          flexShrink: 0,
           background: "rgba(15,23,42,0.9)",
           border: "1px solid rgba(59,130,246,0.4)",
           borderRadius: 8,
@@ -157,6 +168,7 @@ export default function OperacionalizacionModal({ onClose }) {
         style={{
           width: "100%",
           maxWidth: 980,
+          minWidth: isSmallScreen ? "560px" : undefined,
           padding: "16px 16px 0",
           display: "flex",
           flexDirection: "column",
@@ -390,10 +402,12 @@ export default function OperacionalizacionModal({ onClose }) {
       {/* ── Barra de navegación inferior ── */}
       <div
         style={{
-          position: "fixed",
+          position: isSmallScreen ? "sticky" : "fixed",
           bottom: 0,
           left: 0,
           right: 0,
+          marginTop: isSmallScreen ? "auto" : undefined,
+          width: isSmallScreen ? "100%" : undefined,
           zIndex: 51,
           background: "rgba(8,14,30,0.96)",
           borderTop: "1px solid rgba(59,130,246,0.2)",

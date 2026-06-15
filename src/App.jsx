@@ -155,6 +155,17 @@ export default function App() {
     );
   }, [slideIndex]);
 
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    () => window.innerWidth < 640,
+  );
+  useEffect(() => {
+    const handleResize = () => setIsSmallScreen(window.innerWidth < 640);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const hideOnMobilePresentation = showIntro && isSmallScreen;
+
   const logoSrc = `${import.meta.env.BASE_URL}logoUNVIME.png`;
 
   const headerChipStyle = {
@@ -185,11 +196,11 @@ export default function App() {
           ...headerChipStyle,
           top: "calc(16px + env(safe-area-inset-top))",
           left: "calc(16px + env(safe-area-inset-left))",
-          display: "flex",
+          display: hideOnMobilePresentation ? "none" : "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "8px",
-          padding: "10px 14px",
+          gap: isSmallScreen ? "4px" : "8px",
+          padding: isSmallScreen ? "6px 8px" : "10px 14px",
           maxWidth:
             "min(220px, calc(100vw - 32px - env(safe-area-inset-left) - env(safe-area-inset-right)))",
         }}
@@ -199,7 +210,7 @@ export default function App() {
           src={logoSrc}
           alt="UNVIME — Universidad Nacional de Villa Mercedes"
           style={{
-            height: "34px",
+            height: isSmallScreen ? "22px" : "34px",
             width: "auto",
             maxWidth: "148px",
             objectFit: "contain",
@@ -209,7 +220,7 @@ export default function App() {
         />
         <span
           style={{
-            fontSize: "12px",
+            fontSize: isSmallScreen ? "9px" : "12px",
             fontWeight: 600,
             lineHeight: 1.3,
             color: "#e2e8f0",
@@ -229,18 +240,18 @@ export default function App() {
           top: "calc(16px + env(safe-area-inset-top))",
           // Si esta activado el panel 64px right: "calc(64px + env(safe-area-inset-right))",
           right: "calc(16px + env(safe-area-inset-right))",
-          display: "flex",
+          display: hideOnMobilePresentation ? "none" : "flex",
           flexDirection: "column",
           alignItems: "flex-end",
-          gap: "4px",
-          padding: "10px 14px",
+          gap: isSmallScreen ? "2px" : "4px",
+          padding: isSmallScreen ? "6px 8px" : "10px 14px",
           textAlign: "right",
         }}
         aria-label="Alumno y profesora"
       >
         <span
           style={{
-            fontSize: "12px",
+            fontSize: isSmallScreen ? "9px" : "12px",
             fontWeight: 600,
             lineHeight: 1.35,
             color: "#e2e8f0",
@@ -251,7 +262,7 @@ export default function App() {
         </span>
         <span
           style={{
-            fontSize: "12px",
+            fontSize: isSmallScreen ? "9px" : "12px",
             fontWeight: 600,
             lineHeight: 1.35,
             color: "#94a3b8",
@@ -360,7 +371,7 @@ export default function App() {
           zIndex: 30,
           textDecoration: "none",
           fontSize: "14px",
-          display: "flex",
+          display: hideOnMobilePresentation ? "none" : "flex",
           alignItems: "center",
           gap: "6px",
         }}
