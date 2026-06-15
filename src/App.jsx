@@ -340,7 +340,7 @@ export default function App() {
 
       {/* ── Boton de descarga del trabajo final ── */}
       <a
-        href={`${import.meta.env.BASE_URL}Trabajo Final - Germán Adrián Muñoz.pdf?v=${import.meta.env.VITE_BUILD_TIME ?? Date.now()}`}
+        href={`${import.meta.env.BASE_URL}trabajo-final-german-adrian-munoz.pdf?v=${import.meta.env.VITE_BUILD_TIME ?? Date.now()}`}
         target="_blank"
         rel="noopener noreferrer"
         style={{
