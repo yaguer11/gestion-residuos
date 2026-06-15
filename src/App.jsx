@@ -338,12 +338,16 @@ export default function App() {
       )}
 
       {showConceptMap && (
-        <ConceptMapModal onClose={() => setShowConceptMap(false)} />
+        <ConceptMapModal
+          onClose={() => setShowConceptMap(false)}
+          isSmallScreen={isSmallScreen}
+        />
       )}
 
       {showOperacionalizacion && (
         <OperacionalizacionModal
           onClose={() => setShowOperacionalizacion(false)}
+          isSmallScreen={isSmallScreen}
         />
       )}
 
