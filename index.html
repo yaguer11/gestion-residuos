@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestión de Residuos Urbanos</title>
+    <link rel="icon" type="image/png" href="/logoUNVIME.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,6 +39,16 @@
       .intro-schema {
         justify-self: stretch;
       }
+      @keyframes step-reveal {
+        from {
+          transform: translateY(6px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
       @media (min-width: 820px) {
         .intro-content {
           grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
@@ -50,7 +61,6 @@
         .intro-content {
           grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.9fr);
         }
-      }
       }
       @keyframes intro-fade {
         from {

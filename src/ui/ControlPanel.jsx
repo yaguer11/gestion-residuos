@@ -180,10 +180,10 @@ export default function ControlPanel({
         <div style={styles.panel}>
           {/* ── Encabezado ── */}
           <div style={styles.header}>
-            <div style={styles.headerTitle}>🗑️ Simulador</div>
+            {/* <div style={styles.headerTitle}>🗑️ Simulador</div>
             <div style={styles.headerSub}>
               Gestión de Residuos · Villa Mercedes, SL
-            </div>
+            </div> */}
           </div>
 
           {/* ── Controles de simulación ── */}
@@ -263,7 +263,9 @@ export default function ControlPanel({
             </div>
 
             <div style={styles.metricCard}>
-              <span style={{ color: C.muted }}>Basurales activos</span>
+              <span style={{ color: C.muted }}>
+                Basura pendiente de recolección
+              </span>
               <strong
                 style={{
                   color: activeDumps > 0 ? C.red : C.green,
@@ -337,15 +339,16 @@ export default function ControlPanel({
                 }}
               />
             </div>
-            <p
+            {/* <p
               style={{ color: C.muted, fontSize: "11px", marginBottom: "10px" }}
             >
               Presiona para simular que el vecino recibe la alerta y saca la
               basura.
-            </p>
+            </p> */}
             {[
               { id: 1, name: "Vecino A", color: "#4ade80" },
               { id: 2, name: "Vecino B", color: "#60a5fa" },
+              { id: 3, name: "Vecino C", color: "#f87171" },
             ].map((n) => {
               const dump = dumps.find((d) => d.id === n.id);
               return (
@@ -396,14 +399,14 @@ export default function ControlPanel({
               background: "rgba(0,0,0,0.3)",
             }}
           >
-            <div
+            {/* <div
               style={{ fontSize: "11px", color: C.muted, lineHeight: "1.8" }}
             >
               <span style={{ color: "#f97316" }}>■</span> Camión &nbsp;
               <span style={{ color: "#4ade80" }}>●</span> Vecino A &nbsp;
               <span style={{ color: "#60a5fa" }}>●</span> Vecino B &nbsp;
               <span style={{ color: "#fbbf24" }}>▲</span> Basural
-            </div>
+            </div> */}
             <div
               style={{ fontSize: "10px", color: "#475569", marginTop: "4px" }}
             >

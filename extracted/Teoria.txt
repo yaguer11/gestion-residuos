@@ -1,0 +1,256 @@
+1. Epistemología y el Conocimiento Científico 
+Antes de investigar, debemos entender qué es la ciencia. La epistemología es la rama de la 
+filosofía que estudia cómo se produce y valida el conocimiento humano. 
+• Conocimiento Vulgar (o de sentido común): Es el que adquirimos en la vida cotidiana, 
+de forma espontánea, basado en la experiencia y sin un método estructurado (por 
+ejemplo, saber que si el cielo está muy gris oscuro, lloverá). 
+• Conocimiento Científico: Es sistemático, verificable, metódico, riguroso y objetivo. 
+Busca explicar los fenómenos mediante pruebas empíricas. 
+• Método Científico: Es el conjunto de pasos lógicos (observación, planteamiento, 
+hipótesis, experimentación/recolección de datos y conclusión) que usamos para 
+generar ese conocimiento válido. 
+2. El Problema de Investigación 
+Todo proyecto de investigación nace porque hay algo que no sabemos o una situación 
+indeseable en la realidad. 
+• Definición de Problema: Es una brecha o discrepancia entre una situación actual (lo 
+que ocurre) y una situación ideal o deseada (lo que debería ser). 
+• Problemas Prácticos: Son dificultades de la realidad que requieren una solución o 
+acción concreta (ejemplo: la basura acumulada fuera de hora en Villa Mercedes). 
+• Problemas de Investigación: Son vacíos de conocimiento que requieren estudio 
+metódico para ser respondidos (ejemplo: ¿cuántos vecinos usarían una app para 
+solucionar ese problema práctico?). 
+• Planteamiento del Problema: Es redactar y describir el contexto general de esa 
+situación indeseada, yendo desde lo macro (lo mundial o nacional) hasta lo micro (la 
+ciudad o el barrio). 
+• Formulación del Problema: Es la reducción de todo ese texto a una pregunta clara, 
+precisa y delimitada en espacio y tiempo. 
+3. Objetivos de la Investigación 
+Son las metas que guían tu estudio. Expresan qué querés lograr con tu investigación y siempre 
+deben redactarse comenzando con un verbo en infinitivo (Analizar, Determinar, Identificar, 
+Evaluar). 
+• Objetivo General: Expresa el fin último del trabajo. Está directamente alineado con tu 
+pregunta de investigación. 
+• Objetivos Específicos: Son los pasos concretos u operaciones metodológicas necesarias 
+para alcanzar, por sumatoria, el objetivo general. 
+Regla de oro metodológica: Los objetivos no son "tareas" o "actividades" del investigador 
+(como "diseñar una app" o "leer libros"), sino metas de generación de conocimiento (como 
+"evaluar la adopción de una app"). 
+4. Hipótesis y Variables 
+
+Si la pregunta de investigación representa tu duda, la hipótesis es tu apuesta científica. 
+• Hipótesis: Es una proposición o respuesta tentativa a la pregunta de investigación. 
+Adelanta un resultado que luego será sometido a comprobación empírica (verificación 
+con datos). 
+• Variables: Son características, propiedades o cualidades que pueden cambiar (variar) y 
+cuya variación es medible u observable (ejemplo: edad, grado de aceptación, volumen 
+de basura). 
+Tipo de 
+Variable Definición 
+Independiente Es la causa supuesta de un fenómeno. En los experimentos, es la 
+variable que el investigador manipula. 
+Dependiente Es el efecto o consecuencia. Es la variable que medimos para ver 
+cómo reacciona. 
+Interviniente Son factores externos (ambientales, sociales) que pueden alterar el 
+resultado y que el investigador debe intentar controlar . 
+5. El Marco Teórico 
+No es un diccionario técnico, sino el sustento conceptual de tu investigación. Demuestra que 
+conoces lo que otros han estudiado antes y define el "lente" con el que mirarás tu problema. 
+• Antecedentes: Investigaciones previas (tesis, artículos científicos) similares a la tuya. 
+Sirven para no inventar la rueda y ver qué metodologías usaron otros. 
+• Bases Teóricas: Los enfoques, modelos o teorías que explican tu tema central (como el 
+Modelo de Aceptación Tecnológica - TAM que usaste). 
+• Definición de Términos Básicos: Aclaración precisa de los conceptos clave para evitar 
+ambigüedades en la lectura. 
+6. El Marco Metodológico 
+Es el "cómo" harás la investigación. Describe de forma rigurosa los procedimientos y técnicas 
+para recolectar y analizar los datos. 
+Enfoques 
+• Cuantitativo: Mide realidades objetivas usando números y análisis estadístico. 
+Comprueba hipótesis de manera deductiva. 
+• Cualitativo: Comprende realidades subjetivas, significados, discursos y experiencias. 
+Suele ser inductivo. 
+Nivel o Alcance de Investigación 
+• Exploratorio: Se aplica a temas muy poco estudiados o totalmente novedosos. 
+
+• Descriptivo: Mide y detalla de manera independiente las características de un 
+fenómeno (como en tu Trabajo Final). 
+• Explicativo: Busca el porqué de los hechos, estableciendo relaciones claras de causa y 
+efecto. 
+Diseño de Investigación 
+• Documental: Basado exclusivamente en la recolección de datos a través de fuentes 
+secundarias (libros, archivos, bases de datos). 
+• De Campo / No Experimental: Recolección de datos directamente de los sujetos en su 
+entorno natural, observando los hechos tal cual ocurren, sin manipular variables. 
+• Experimental: El investigador manipula deliberadamente una variable independiente 
+(crea una situación) para ver su efecto en una dependiente, usualmente dividiendo a 
+las personas en un grupo experimental y un grupo de control. 
+Población y Muestra 
+• Población: El universo o conjunto total de individuos que comparten las características 
+a estudiar. 
+• Muestra: Una porción pequeña pero representativa de esa población. 
+• Muestreo Probabilístico: Todos en la población tienen la misma chance matemática de 
+ser elegidos (al azar). 
+• Muestreo No Probabilístico: Los sujetos se eligen según la conveniencia o el criterio 
+específico del investigador. 
+7. Integridad y Normas Académicas 
+La ciencia exige un altísimo rigor ético en el manejo de la información. 
+• Normas APA: Es el estándar internacional para dar formato a los documentos, realizar 
+citas dentro del texto y armar la lista de referencias bibliográficas. Permite que 
+cualquier lector pueda rastrear de dónde sacaste la información. 
+• Plagio: Es la apropiación indebida de ideas, textos o datos de otros autores, 
+presentándolos como propios. Evitar el plagio mediante la cita correcta (con autor y 
+año) es la base innegociable de la ética académica. 
+La Fórmula de la Pregunta de Investigación 
+1. Palabra Interrogativa (El detonante) 
+Es la forma en la que inicias la pregunta. Debe invitar a una medición o análisis profundo, 
+nunca a un "sí" o un "no". 
+• Ejemplos: ¿Qué...? ¿Cómo...? ¿Cuál es...? ¿De qué manera...? ¿En qué medida...? 
+2. El Alcance (Nivel de la investigación) 
+La palabra interrogativa que elijas determina automáticamente el alcance o nivel de tu 
+investigación: 
+
+• Si preguntas ¿Qué grado...? o ¿Cuáles son las características...? $\rightarrow$ Tu 
+alcance es Descriptivo (solo vas a medir y describir cómo está la variable). 
+• Si preguntas ¿Qué relación existe entre X e Y...? $\rightarrow$ Tu alcance es 
+Correlacional (vas a ver cómo se mueven dos variables juntas). 
+• Si preguntas ¿Cómo influye X en Y...? $\rightarrow$ Tu alcance es Explicativo (buscas 
+causa y efecto). 
+3. Variable (Lo que vas a medir) 
+Es la característica, fenómeno o cualidad que va a ser el centro de tu estudio y que puede 
+cambiar o medirse. 
+• Ejemplo: El grado de aceptación, el nivel de desinformación, el volumen de basura. 
+4. Población o Unidad de Análisis (A quiénes vas a investigar) 
+Son los sujetos, objetos o entidades a los que se les va a medir la variable. 
+• Ejemplo: Los residentes, los usuarios, los camiones recolectores. 
+5. Espacio / Límite Espacial (Dónde) 
+El lugar geográfico exacto donde ocurre el fenómeno, para no generalizar de forma 
+irresponsable. 
+• Ejemplo: La ciudad de Villa Mercedes, San Luis. 
+6. Tiempo / Límite Temporal (Cuándo) 
+El periodo histórico en el que se enmarca el estudio. Es crucial porque las realidades sociales y 
+tecnológicas cambian. 
+• Ejemplo: Durante el año 2026. 
+Basándome en los apuntes de tu cátedra y en el autor Fidias Arias, aquí tienes la "anatomía" 
+exacta de cómo debe ser y qué debe contener una pregunta científica perfecta. 
+1. ¿Cómo debe ser? (Sus características principales) 
+Para que un problema práctico se convierta en un verdadero problema de investigación 
+científica, la pregunta debe cumplir con estas reglas innegociables: 
+• Empírica: Debe poder responderse mediante la recolección de datos de la realidad 
+(algo que se pueda ver, medir, tocar o encuestar). No puede ser una pregunta filosófica 
+o moral (ej. ¿Existe vida después de la muerte? no es un problema científico empírico). 
+• Abierta (No dicotómica): ¡Esta regla es clave! La pregunta nunca debe responderse 
+con un simple "Sí" o "No". Si tu pregunta se responde con un sí o un no, debes 
+reformularla. 
+o Incorrecto: ¿Influye la aplicación en la limpieza urbana? (Respuesta: Sí/No). 
+o Correcto: ¿De qué manera influye la aplicación en la limpieza urbana? 
+
+• Libre de juicios de valor: En la ciencia somos objetivos. La redacción no debe incluir 
+palabras que impliquen juicios personales como "bueno", "malo", "mejor", "peor", 
+"agradable" o "desagradable". 
+• Inédita o Relevante: La respuesta debe aportar un nuevo conocimiento que no esté ya 
+resuelto y empaquetado en un libro de texto básico. 
+2. ¿Qué debe tener? (Sus componentes obligatorios) 
+Una vez que cumples con las reglas anteriores, debes armar la estructura de la oración. Según 
+Arias, una pregunta de investigación debe estar estrictamente delimitada. Tiene que contener 
+estos cuatro elementos visibles: 
+1. La variable (o variables) de estudio: ¿Qué es exactamente lo que vas a medir o 
+analizar? (Ejemplo: el grado de aceptación, la evolución de un precio, el nivel de 
+conocimiento). 
+2. La unidad de análisis (Población): ¿A quiénes vas a investigar? (Ejemplo: los 
+residentes, los estudiantes, las empresas, los camiones recolectores). 
+3. El límite espacial: ¿Dónde lo vas a hacer? No es lo mismo estudiar un fenómeno en 
+toda Argentina que en un barrio específico. (Ejemplo: la ciudad de Villa Mercedes). 
+4. El límite temporal: ¿Cuándo lo vas a hacer? Las realidades cambian con el tiempo, por 
+lo que debes fijar un año o período. (Ejemplo: durante el año 2026). 
+1. Epistemología y el Método Científico 
+Para entender la materia, primero hay que entender qué hacemos en la universidad. La 
+epistemología nos enseña que no todo lo que creemos saber es ciencia. 
+• El salto del sentido común a la ciencia: Imagina que ves que en una esquina siempre 
+hay basura. El conocimiento vulgar te dirá: "Los vecinos de esa cuadra son sucios". Es 
+una conclusión rápida, basada en prejuicios y sin pruebas. El conocimiento científico, 
+en cambio, requiere dudar de esa primera impresión y aplicar un método. Al medir y 
+observar sistemáticamente, la ciencia podría descubrir que "el camión recolector no 
+puede girar en esa esquina los días de lluvia", revelando la verdadera causa. 
+• El Método Científico: Es el antídoto contra el error humano y la subjetividad. No es un 
+invento caprichoso, es una receta estandarizada para que cualquier otro investigador 
+en el mundo pueda replicar tu estudio y llegar a los mismos resultados. 
+2. El Problema de Investigación: La técnica del embudo 
+Un error clásico es confundir un "tema" con un "problema". La "gestión de residuos" es un 
+tema (amplio, general). El "problema" es la pieza que no encaja o que funciona mal dentro de 
+ese tema. 
+• El Planteamiento (El Embudo): Los metodólogos recomiendan redactar el problema 
+yendo de lo general a lo particular. 
+1. Macro: Empiezas hablando de cómo ha crecido la basura a nivel mundial y 
+nacional. 
+
+2. Meso: Bajas a cómo las ciudades intermedias (como las provincias argentinas) 
+sufren para financiar la recolección. 
+3. Micro: Aterrizas en tu calle, en Villa Mercedes, describiendo el síntoma exacto 
+(la desincronización y los microbasurales). 
+• La Formulación: Es la punta del embudo. Todo ese texto enorme decanta en una sola 
+pregunta precisa que guiará tu trabajo. 
+3. Objetivos: La brújula y los escalones 
+Si la pregunta de investigación es el destino en tu GPS, los objetivos son la ruta trazada para 
+llegar ahí. 
+• La taxonomía de los verbos: En metodología, no usamos verbos vagos como 
+"entender" o "saber", porque ¿cómo mides si alguien "entendió" algo? Usamos verbos 
+de acción cognitiva observables. Se suele usar la Taxonomía de Bloom, que clasifica los 
+verbos desde los más simples (Identificar, Describir) hasta los más complejos (Evaluar, 
+Analizar, Crear). 
+• Analogía de la escalera: 
+o Tu Objetivo General es llegar al techo de la casa (ej. Analizar el impacto de la 
+app). 
+o Tus Objetivos Específicos son los escalones que no puedes saltarte para llegar 
+ahí: Escalón 1 (Diagnosticar la situación actual), Escalón 2 (Medir el uso de la 
+app), Escalón 3 (Comparar el antes y el después). 
+4. Hipótesis y Variables (El corazón cuantitativo) 
+En el enfoque cuantitativo, tú apuestas a que algo va a suceder antes de medirlo. Esa apuesta 
+es la hipótesis. 
+• La Operacionalización de Variables: Este es un concepto de nivel experto. Una variable 
+abstracta no se puede medir directamente. Si tu variable es el "Grado de Aceptación", 
+no puedes simplemente preguntarle a alguien "¿Cuál es tu grado de aceptación del 1 al 
+10?". Tienes que operacionalizarla (bajarla a la realidad). 
+o Concepto: Aceptación tecnológica. 
+o Dimensiones: Utilidad percibida y Facilidad de uso (lo que dice el modelo TAM). 
+o Indicadores (lo medible): Frecuencia de uso por semana, tiempo en pantalla, 
+respuestas en una encuesta ("¿Te resultó intuitiva la app?"). 
+5. El Marco Teórico: Los hombros de gigantes 
+Existe una frase en la ciencia que dice: "Si he visto más lejos es porque estoy sentado sobre los 
+hombros de gigantes". Esto es exactamente el Marco Teórico. 
+• No es un glosario: No se trata de poner un diccionario diciendo "Basura: dícese de los 
+desperdicios...". 
+• Es tu "lente": El Marco Teórico define la teoría que elegiste para mirar tu problema. 
+Podrías haber analizado a los vecinos desde la psicología social, desde la economía o 
+
+desde la ecología. Al elegir el Modelo TAM (Aceptación Tecnológica), le estás diciendo 
+a la profesora: "Voy a analizar a estos vecinos estrictamente como 'usuarios' 
+interactuando con un 'software'". 
+6. El Marco Metodológico (El "Cómo" detallado) 
+Esta es la estructura de ingeniería de tu trabajo. Si tu base está mal, el edificio se cae. 
+• Los Alcances (Niveles de profundidad de Fidias Arias): 
+1. Exploratorio: Es como explorar un continente nuevo. Se investigan cosas que 
+nadie ha tocado antes (ej. ¿Cómo afecta a la psicología humana vivir en 
+Marte?). 
+2. Descriptivo (¡Tu nivel!): Ya se conoce el terreno, pero quieres hacer un mapa 
+detallado. Mides las características de algo que ya existe (ej. ¿Qué porcentaje 
+de la gente en mi ciudad usará esta app?). 
+3. Correlacional: Buscas si dos cosas se mueven juntas (ej. ¿La gente que gana 
+más dinero tira más basura?). 
+4. Explicativo: El más profundo. Busca el porqué definitivo y la causa absoluta (ej. 
+¿Por qué el material X se oxida a los 100 grados?). 
+• Diseño Experimental vs No Experimental: 
+o Experimental: El investigador es el director de la película. Él crea la situación, 
+encierra a la gente en un laboratorio y les inyecta un medicamento (variable 
+independiente) para ver qué pasa. 
+o No Experimental (¡Tu diseño!): El investigador es un fotógrafo de la naturaleza. 
+No interviene. Deja la app subida a internet y simplemente se sienta a observar 
+los datos reales de lo que hace la gente, sin obligar a nadie a actuar de cierta 
+forma. 
+7. Normas APA y Ética Académica 
+Finalmente, la ciencia no funciona sin confianza. 
+• Evitar el plagio: Apropiarse de la idea de otro destruye el conocimiento porque rompe 
+la cadena de rastreo. Si afirmas que "el Modelo TAM demuestra que la facilidad de uso 
+es clave", debes poner (Davis, 1989). ¿Por qué? Para que el que lea tu trabajo pueda ir 
+al libro original de Davis en la biblioteca y comprobar que no estás inventando los 
+datos para favorecer tu investigación. 
+ 

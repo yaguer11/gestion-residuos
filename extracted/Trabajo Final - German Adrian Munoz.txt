@@ -1,0 +1,479 @@
+ 
+Universidad Nacional de Villa Mercedes 
+Facultad de Ingeniería y Ciencias Agropecuarias 
+ 
+ 
+TRABAJO FINAL DE INVESTIGACIÓN 
+ 
+Optimización del servicio de recolección de residuos urbanos mediante 
+alertas vecinales 
+ 
+ 
+Carrera: Ingeniería en Sistemas de Información 
+Materia: Metodología de la Investigación 
+Profesora: Helga Myrna Blanco 
+Alumno: Germán Adrián Muñoz 
+Lugar: Villa Mercedes, San Luis 
+Año: 2026 
+
+
+    2 
+Índice 
+1. Planteamiento del Problema y Justificación .................................................. 4 
+1.1. Problema ................................................................................................. 4 
+1.2. Justificación ............................................................................................ 5 
+2. Objetivos e Hipótesis de la Investigación ...................................................... 6 
+2.1. Objetivo General ..................................................................................... 6 
+2.2. Objetivos Específicos .............................................................................. 6 
+2.3. Hipótesis ................................................................................................. 6 
+3. Marco Teórico ................................................................................................ 7 
+Capítulo 1: Gestión de Residuos Sólidos Urbanos ..........................................  
+3.1.1. Definición y clasificación de residuos sólidos urbanos .....................  
+3.1.2. El ciclo de recolección municipal: etapas y actores ...........................  
+3.1.3. Problemáticas asociadas a la desincronización en la recolección ......  
+3.1.4. Impacto ambiental y urbano de los microbasurales ...........................  
+3.1.5. Antecedentes de investigación sobre residuos urbanos en ciudades 
+intermedias de Argentina .............................................................................  
+Capítulo 2: Comunicación entre el Estado Municipal y la Ciudadanía ...........  
+3.2.1. Comunicación institucional: concepto y dimensiones .......................  
+3.2.2. Brecha informacional entre municipio y vecinos ..............................  
+3.2.3. El rol de la información en la modificación de conductas 
+ambientales ..................................................................................................  
+3.2.4. Participación ciudadana y gobierno abierto .......................................  
+Capítulo 3: Tecnología y Servicios Urbanos Inteligentes ................................  
+3.3.1. Ciudad inteligente: definición y componentes ...................................  
+3.3.2. Aplicaciones móviles y web en la gestión de servicios públicos .......  
+3.3.3. Sistemas de alertas y notificaciones vecinales: casos de estudio .......  
+
+    3 
+3.3.4. Barreras tecnológicas y brecha digital en la adopción de apps 
+municipales ..................................................................................................  
+Capítulo 4: Aceptación Tecnológica y Comportamiento del Usuario ........... 8 
+3.4.1. Modelo de Aceptación Tecnológica (TAM): Fundamentos ............ 9 
+3.4.2. Factores que Determinan la Adopción de Tecnología en Contextos 
+Cívicos ..................................................................................................... 11 
+3.4.2.1. Factores Individuales .................................................................. 11 
+3.4.2.2. Factores Sociales ......................................................................... 12 
+3.4.2.3. Factores Contextuales ................................................................. 13 
+3.4.3. Usabilidad Percibida y Utilidad Percibida en Aplicaciones de 
+Participación Ciudadana .......................................................................... 13 
+3.4.4. Medición de la Aceptación Tecnológica: Indicadores y Métricas . 15 
+Capítulo 5: Marco Legal y Normativo ........................................................... 8 
+3.5.1. Legislación nacional sobre residuos sólidos urbanos (Ley 25.916) 8 
+3.5.2. Normativa provincial de San Luis en materia ambiental y residuos 8 
+3.5.3. Normativa municipal de Villa Mercedes ......................................... 8 
+4. Metodología de la Investigación .................................................................. 17 
+4.1. Enfoque de la Investigación y Tipo de Muestreo ................................. 17 
+4.2. Finalidad de la Investigación ................................................................ 18 
+4.3. Diseño de la Investigación: Experimental o No Experimental ............. 18 
+4.4. Dimensión Temporal ............................................................................ 19 
+Referencias ....................................................................................................... 21 
+ 
+  
+
+    4 
+1. Planteamiento del Problema y Justificación 
+1.1. Problema 
+En la ciudad de Villa Mercedes, provincia de San Luis, se observa una 
+problemática vinculada a la gestión de los residuos sólidos urbanos. A pesar de 
+los esfuerzos municipales por mantener la limpieza, persiste una 
+desincronización entre los horarios de rec olección y el momento en que los 
+vecinos depositan sus desechos en la vía pública. Esta situación deriva en la 
+obstrucción de desagües pluviales y la proliferación de microbasurales, 
+afectando la higiene urbana y los costos operativos del municipio. 
+Los vecinos depositan los desechos en la vía pública en horarios que no 
+coinciden con el paso del servicio de recolección. Esta situación no solo degrada 
+la higiene urbana, sino que genera consecuencias ambientales y operativas 
+críticas: la basura dispersa  antes del paso del camión obstruye los desagües 
+pluviales, incrementando el riesgo de inundaciones en episodios de lluvia, y 
+obliga al municipio a desplegar camiones de refuerzo para limpiar los focos de 
+residuos acumulados, con el consecuente aumento del gasto público. 
+Frente a este escenario de desinformación, la presente investigación 
+busca responder el siguiente interrogante: ¿Qué grado de aceptación tendría una 
+aplicación web de alertas vecinales en los residentes de Villa Mercedes durante 
+el año 2026? 
+
+    5 
+Para abordar esta problemática, resulta necesario determinar el nivel 
+actual de acceso a la información por parte de los vecinos y evaluar la viabilidad 
+técnica y social de implementar esta herramienta digital. 
+1.2. Justificación 
+Esta investigación se justifica, en primer lugar, porque permite 
+identificar de forma clara los problemas de comunicación que existen 
+actualmente entre el municipio y los vecinos de Villa Mercedes sobre la 
+recolección de basura. 
+A nivel social, el estudio beneficiará a la comunidad ya que, al estar 
+mejor informados, los vecinos podrán organizar mejor los horarios de sus 
+hogares, contribuyendo a calles y barrios más limpios. El éxito de esta solución 
+podrá medirse de forma objetiva  analizando cuántas personas utilizan 
+efectivamente la aplicación y verificando si los camiones municipales de 
+refuerzo reducen su volumen de trabajo al encontrar menos residuos dispersos, 
+lo que representaría un ahorro directo para el municipio. 
+Desde el punto de vista teórico, el estudio aportará evidencia sobre cómo 
+la falta de información oficial incide negativamente en los hábitos ambientales 
+de los ciudadanos y cómo una herramienta tecnológica puede contribuir a 
+mejorarlos. Desde el punto de vista metodológico, el cuestionario diseñado para 
+
+    6 
+este estudio podrá ser reutilizado por otros investigadores que estudien 
+aceptación tecnológica en ciudades intermedias argentinas. 
+2. Objetivos e Hipótesis de la Investigación 
+2.1. Objetivo General 
+Analizar el grado de adopción de una plataforma tecnológica de alertas 
+vecinales y evaluar su impacto directo en la eficiencia operativa de la 
+recolección de residuos municipales en Villa Mercedes durante el año 2026. 
+2.2. Objetivos Específicos 
+1. Determinar el nivel actual de acceso a la información sobre los 
+horarios de recolección de basura que poseen los vecinos de Villa Mercedes. 
+2. Evaluar el grado de aceptación de la aplicación web mediante el 
+monitoreo de métricas de uso del sistema durante su período de prueba. 
+3. Determinar el volumen de trabajo de los camiones municipales de 
+limpieza de refuerzo antes y después de la implementación de la aplicación. 
+2.3. Hipótesis 
+La ciudadanía de Villa Mercedes presentará un alto grado de aceptación 
+hacia la implementación de una aplicación web de alertas vecinales como 
+solución tecnológica frente a la desinformación actual sobre los horarios de 
+recolección de residuos sólidos urbanos. 
+
+    7 
+3. Marco Teórico 
+Capítulo 1: Gestión de Residuos Sólidos Urbanos 
+3.1.1. Definición y clasificación de residuos sólidos urbanos 
+3.1.2. El ciclo de recolección municipal: etapas y actores 
+3.1.3. Problemáticas asociadas a la desincronización en la recolección 
+3.1.4. Impacto ambiental y urbano de los microbasurales 
+3.1.5. Antecedentes de investigación sobre residuos urbanos en 
+ciudades intermedias de Argentina 
+Capítulo 2: Comunicación entre el Estado Municipal y la Ciudadanía 
+3.2.1. Comunicación institucional: concepto y dimensiones 
+3.2.2. Brecha informacional entre municipio y vecinos 
+3.2.3. El rol de la información en la modificación de conductas 
+ambientales 
+3.2.4. Participación ciudadana y gobierno abierto 
+Capítulo 3: Tecnología y Servicios Urbanos Inteligentes 
+3.3.1. Ciudad inteligente: definición y componentes 
+3.3.2. Aplicaciones móviles y web en la gestión de servicios públicos 
+3.3.3. Sistemas de alertas y notificaciones vecinales: casos de estudio 
+3.3.4. Barreras tecnológicas y brecha digital en la adopción de apps 
+municipales 
+Capítulo 4: Aceptación Tecnológica y Comportamiento del Usuario  
+3.4.1. Modelo de Aceptación Tecnológica (TAM): Fundamentos 
+
+    8 
+3.4.2. Factores que Determinan la Adopción de Tecnología en 
+Contextos Cívicos 
+3.4.2.1. Factores Individuales 
+3.4.2.2. Factores Sociales 
+3.4.2.3. Factores Contextuales 
+3.4.3. Usabilidad Percibida y Utilidad Percibida en Aplicaciones de 
+Participación Ciudadana 
+3.4.4. Medición de la Aceptación Tecnológica: Indicadores y Métricas 
+Capítulo 5: Marco Legal y Normativo 
+3.5.1. Legislación nacional sobre residuos sólidos urbanos (Ley 
+25.916) 
+3.5.2. Normativa provincial de San Luis en materia ambiental y 
+residuos 
+3.5.3. Normativa municipal de Villa Mercedes 
+ 
+Capítulo 4: Aceptación Tecnológica y Comportamiento del Usuario 
+La comprensión de los factores que llevan a un ciudadano a adoptar o 
+rechazar una herramienta tecnológica resulta central para evaluar la viabilidad 
+de una aplicación web de alertas vecinales. En el marco de la presente 
+investigación, cuya pregunta central  indaga el grado de aceptación de dicha 
+plataforma en la ciudad de Villa Mercedes, el estudio de los modelos y teorías 
+de aceptación tecnológica proporciona el sustento conceptual necesario para 
+interpretar los datos que se recopilarán. Este capítulo desar rolla los principales 
+
+    9 
+enfoques teóricos vinculados a la adopción de tecnología por parte de usuarios 
+en contextos cívicos y de servicios públicos. 
+3.4.1. Modelo de Aceptación Tecnológica (TAM): Fundamentos 
+El Modelo de Aceptación Tecnológica fue propuesto por  Davis (1989) 
+como una adaptación de la Teoría de la Acción Razonada de  Fishbein y Ajzen 
+(1975). Su propósito original fue explicar los determinantes de la aceptación de 
+los sistemas de información por parte de los usuarios. Desde su formulación, el 
+TAM se ha convertido en uno de los modelos más citados y aplicados en el 
+campo de los sistemas de infor mación y la tecnología educativa (Venkatesh et 
+al., 2003). 
+En su formulación original,  Davis (1989) postula que la intención 
+conductual de uso de una tecnología está determinada por dos creencias 
+fundamentales: la utilidad percibida y la facilidad de uso percibida. La utilidad 
+percibida se define como el grado en que una persona cree que utilizar un 
+sistema particular mejoraría su desempeño o le reportaría beneficios concretos. 
+Por su parte, la facilidad de uso percibida refiere al grado en que una persona 
+considera que utilizar el sistema estará libre de esfuerzo. 
+La relación entre ambas construcciones es relevante: la facilidad de uso 
+percibida influye tanto directamente sobre la intención de uso como 
+indirectamente, a través de su efecto positivo sobre la utilidad percibida. Es 
+
+    10 
+decir, cuanto más fácil le resulta al usuario interactuar con el sistema, mayor es 
+la probabilidad de que lo perciba como útil y, en consecuencia, decida adoptarlo 
+(Davis, 1989). 
+Venkatesh y Davis (2000) ampliaron el modelo original con una versión 
+extendida denominada TAM2, incorporando variables de influencia social y 
+procesos instrumentales cognitivos. Posteriormente, Venkatesh et al.  (2003) 
+integraron elementos de ocho modelos previos en la Teoría Unificada de 
+Aceptación y Uso de la Tecnología (UTAUT), que añade constructos como la 
+expectativa de esfuerzo, la influencia social y las condiciones facilitadoras como 
+predictores del comportamien to de uso. No obstante, para los fines de esta 
+investigación, el TAM original de Davis (1989) resulta suficiente, dado que 
+permite evaluar de manera clara y operacionalizable las percepciones de los 
+ciudadanos sobre una herramienta web de alertas municipales. 
+En el contexto de aplicaciones orientadas a la participación ciudadana y 
+los servicios públicos digitales, investigaciones como las de Carter y Bélanger 
+(2005) han adaptado el TAM para analizar la adopción de servicios de gobierno 
+electrónico, confirmando que la utilidad percibida y la facilidad de uso percibida 
+mantienen su poder explicativo cuando el usuario interactúa con tecnologías de 
+origen estatal. Esto otorga al modelo una base sólida para ser aplicado al caso 
+de una plataforma municipal de alertas vecinales. 
+
+    11 
+3.4.2. Factores que Determinan la Adopción de Tecnología en Contextos 
+Cívicos 
+Más allá del TAM, la literatura sobre tecnología cívica, entendida como 
+el uso de herramientas digitales para mejorar la participación ciudadana y la 
+provisión de servicios públicos , identifica un conjunto de factores adicionales 
+que modulan la decisión de adopción. Estos factores pueden agruparse en tres 
+dimensiones: individuales, sociales y contextuales. 
+3.4.2.1. Factores Individuales 
+Las características propias del usuario influyen de manera determinante 
+en su predisposición a adoptar una nueva tecnología. La edad, el nivel educativo 
+y la experiencia previa con dispositivos digitales son variables frecuentemente 
+reportadas como predictoras del uso de aplicaciones móviles y web (Venkatesh 
+et al., 2003; Czaja et al., 2006)  . En el caso particular de Villa Mercedes, una 
+ciudad intermedia con una población heterogénea en términos de acceso digital, 
+estas variables cobran especial relevancia. 
+La confianza institucional también opera como factor individual: 
+usuarios que desconfían de la administración municipal pueden mostrar 
+resistencia a adoptar herramientas digitales provistas por ese mismo organismo, 
+incluso si técnicamente las perciben como  útiles (Warkentin et al., 2002) . 
+Asimismo, la motivación intrínseca, vinculada al interés del ciudadano en 
+
+    12 
+mejorar su entorno barrial, puede actuar como impulsora de la aceptación, 
+independientemente de las capacidades tecnológicas del individuo. 
+3.4.2.2. Factores Sociales 
+La influencia del entorno social , familia, vecinos, referentes 
+comunitarios,  tiene un peso significativo en la decisión de adoptar tecnologías 
+de participación. Rogers (2003), en su teoría de la Difusión de Innovaciones, 
+señala que la adopción de nuevas tecnologías sigue una curva característica en 
+la que los primeros adoptantes actúan como agentes de difusión para el resto de 
+la comunidad. En este marco, la presencia de líder es barriales o referentes 
+vecinales que adopten y promuevan la aplicación puede ser determinante para 
+su expansión. 
+Un factor social relevante en la aceptación tecnológica, identificado en 
+el TAM2 y la UTAUT, es la norma subjetiva, definida como la percepción del 
+usuario sobre lo que sus grupos de referencia esperan que haga. En el contexto 
+de aplicaciones de gobiernos locales, la adopción se potencia cuando la 
+comunidad considera que el uso de la plataforma es una acción valorada o 
+esperada (Venkatesh y Davis, 2000) . Esta lógica de propagación resulta 
+particularmente relevante para el caso estudiado, dado que el éxito d e la 
+plataforma de alertas de Villa Mercedes depende, en parte, de alcanzar una masa 
+crítica de usuarios. 
+
+    13 
+3.4.2.3. Factores Contextuales 
+El contexto tecnológico e institucional en el que se despliega la 
+aplicación condiciona su aceptación. Las condiciones facilitadoras , definidas 
+por Venkatesh et al. (2003) como el grado en que el individuo cree que existe 
+infraestructura organizacional y técnica para soportar el uso del sistema , son 
+especialmente relevantes en contextos municipales. La disponibilidad de 
+conectividad a internet, la existencia de dispositivos compatibles y el soporte 
+técnico ofrecido por el municipio configuran el escenario en que el usuario toma 
+su decisión. 
+En ciudades intermedias de Argentina, como Villa Mercedes, el acceso 
+a internet móvil de banda ancha ha crecido significativamente en la última 
+década, aunque persisten brechas entre zonas céntricas y periféricas  (INDEC, 
+2023). Esta heterogeneidad territorial debe ser considerada al diseñar una 
+aplicación de alcance municipal y al interpretar los resultados de aceptación. 
+3.4.3. Usabilidad Percibida y Utilidad Percibida en Aplicaciones de 
+Participación Ciudadana 
+La distinción entre usabilidad percibida, equivalente a la facilidad de uso 
+percibida del TAM , y utilidad percibida adquiere matices particulares cuando 
+se analiza en el contexto de aplicaciones de participación ciudadana y servicios 
+municipales. Mientras que en entornos laborales la utilidad percibida se asocia 
+
+    14 
+a mejoras en el desempeño profesional, en el ámbito cívico esta construcción se 
+vincula con los beneficios comunitarios que el usuario espera obtener a través 
+del uso de la herramienta. 
+Alotaibi y Roussinov  (2016) estudiaron la adopción de servicios 
+digitales de gobierno en Arabia Saudita y encontraron que la utilidad percibida 
+es el predictor más robusto de la intención de uso, por encima de la facilidad de 
+uso. Esto sugiere que los ciudadanos son capaces de tolera r cierta complejidad 
+técnica si consideran que la herramienta les reportará beneficios concretos, 
+como conocer con anticipación el horario de recolección de residuos en su 
+barrio, en el caso que ocupa esta investigación. 
+La usabilidad, entendida en términos de diseño de interfaces, juega un 
+rol complementario. Nielsen (1994) definió la usabilidad como la capacidad de 
+un sistema para ser aprendido, eficiente, recordable, libre de errores y 
+satisfactorio para el usuario. En aplicaciones orientadas a poblaciones 
+heterogéneas, como la de Villa Mercedes, donde coexisten adultos may ores y 
+jóvenes con distintos niveles de alfabetización digital, el diseño accesible e 
+intuitivo se convierte en una condición necesaria para garantizar que la utilidad 
+percibida pueda efectivamente traducirse en uso sostenido de la plataforma. 
+Zheng et al. (2018), en un estudio sobre aplicaciones de reporte 
+ciudadano de problemas urbanos en ciudades chinas, hallaron que la 
+satisfacción con la usabilidad correlaciona positivamente con el nivel de 
+
+    15 
+recomendación de la herramienta a otros vecinos. Este efecto de propagación 
+resulta particularmente relevante para el caso estudiado, dado que el éxito de la 
+plataforma de alertas de Villa Mercedes depende, en parte, de alcanzar una masa 
+crítica de usuarios. 
+3.4.4. Medición de la Aceptación Tecnológica: Indicadores y Métricas 
+La operacionalización del concepto de aceptación tecnológica puede 
+realizarse a través de distintas estrategias metodológicas, tanto cuantitativas 
+como cualitativas. En el marco del TAM, la medición se efectúa habitualmente 
+mediante escalas Likert que inda gan la utilidad percibida, la facilidad de uso 
+percibida, la actitud hacia el uso y la intención conductual de uso (Davis, 1989; 
+Venkatesh et al., 2003). 
+Más allá de los instrumentos de autorreporte, la literatura especializada 
+distingue entre medidas de aceptación declarada, es decir, lo que el usuario dice 
+que haría, y medidas de comportamiento real, lo que efectivamente hace (Legris 
+et al., 2003). Esta distinción cobra especial importancia al momento de definir 
+los indicadores de éxito de la implementación de la aplicación web de Villa 
+Mercedes: el número de descargas o registros no es equivalente al uso activo y 
+sostenido de la plataforma. 
+Entre los indicadores de uso real más utilizados en la literatura se 
+encuentran: la frecuencia de acceso al sistema, el tiempo de sesión, la tasa de 
+
+    16 
+retención de usuarios activos tras un período determinado, y el volumen de 
+reportes o alertas generados por los propios vecinos (Zheng et al., 2018). Estos 
+indicadores pueden complementarse con métricas de impacto operativo, como 
+la reducción en el tiempo de respuesta de los camiones municipales o la 
+disminución de focos de basura en vía pública, estableciendo así un puente entre 
+la aceptación tecnológica y la eficiencia del servicio municipal. 
+Para la presente investigación, se propone la utilización de un 
+cuestionario estructurado basado en las escalas de Davis (1989) adaptadas al 
+contexto de participación ciudadana, complementado con el análisis de métricas 
+de uso durante el período de prueba de la aplicación, tal como se especifica en 
+los objetivos específicos del estudio. Esta combinación de métodos permitirá 
+obtener una visión integral del grado de aceptación, respondiendo directamente 
+a la pregunta de investigación planteada. 
+ 
+ 
+ 
+  
+
+    17 
+4. Metodología de la Investigación 
+4.1. Enfoque de la Investigación y Tipo de Muestreo 
+La investigación tiene un enfoque cuantitativo, dado que su objetivo 
+central es medir el grado de aceptación de la aplicación web por parte de los 
+vecinos de Villa Mercedes. Para ello, se requiere obtener un valor numérico que 
+represente la proporción de vecinos que adoptarían y utilizarían la herramienta. 
+La hipótesis formulada, "la ciudadanía presentará un alto grado de aceptación",  
+debe ser comprobada con datos numéricos, lo que descarta el enfoque 
+cualitativo y confirma el cuantitativo. No se busca comprender experiencias 
+subjetivas en profundidad, sino medir y cuantificar la variable de aceptación 
+tecnológica. 
+El tipo de muestreo es no probabilístico por conveniencia, dado que la 
+muestra se conforma por vecinos de Villa Mercedes que voluntariamente 
+utilicen la aplicación web durante un período de prueba. Esta selección de 
+participantes, basada en la adhesión vol untaria de quienes fueron informados 
+sobre la aplicación, es adecuada cuando el objetivo es describir el 
+comportamiento de un grupo específico en un contexto acotado , como lo es 
+Villa Mercedes , sin pretender generalizar los resultados a una población 
+nacional. 
+
+    18 
+4.2. Finalidad de la Investigación 
+La investigación tiene una finalidad aplicada, puesto que no busca 
+generar conocimiento teórico abstracto, sino resolver un problema concreto: la 
+desinformación de los vecinos de Villa Mercedes respecto a los horarios de 
+recolección de residuos sólidos urb anos y sus consecuencias directas en la 
+higiene urbana y la eficiencia operativa del municipio. 
+El conocimiento producido por la investigación está directamente 
+orientado a fundamentar la decisión de implementar o escalar la herramienta 
+tecnológica en el ámbito del municipio de Villa Mercedes. A diferencia de una 
+investigación básica, que podría estu diar en abstracto la relación entre 
+información y conducta ambiental, este estudio parte de una necesidad práctica 
+identificada y busca producir evidencia que justifique o mejore una solución 
+tecnológica concreta. 
+4.3. Diseño de la Investigación: Experimental o No Experimental 
+La investigación es no experimental, ya que no se controla ninguna 
+condición ni se introducen variables independientes para modificar el 
+comportamiento de los vecinos. La aplicación web es desplegada tal como fue 
+diseñada y se mide la reacción espontánea d e los usuarios. No existe un grupo 
+experimental al que se le aplique un tratamiento y un grupo de control que no 
+lo reciba, que es la característica definitoria del diseño experimental. Las 
+
+    19 
+condiciones del estudio son las condiciones reales en las que vive la comunidad 
+de Villa Mercedes. 
+Dentro de los diseños no experimentales, el alcance del estudio es 
+descriptivo, dado que el objetivo es especificar el grado de aceptación de la 
+herramienta, medir el valor de la variable ,  sin pretender explicar por qué se 
+produce ese nivel de aceptación ni establecer relaciones causales con otras 
+variables. La pregunta de investigación "¿qué grado de aceptación tendría la 
+app?" es, por definición, una pregunta descriptiva, y la hipótesis f ormulada es 
+una hipótesis descriptiva de acuerdo con la clasificación de Arias (2012). 
+4.4. Dimensión Temporal 
+En esta investigación, la medición central del grado de aceptación , a 
+través del cuestionario y de las métricas de uso del sistema ,  se realizará en un 
+momento específico: al finalizar el período de prueba de la aplicación. No se 
+realiza seguimiento de los mismos sujetos a lo largo de múltiples momentos 
+temporales. 
+Sin embargo, el tercer objetivo específico del estudio , determinar el 
+volumen de trabajo de los camiones municipales de limpieza de refuerzo antes 
+y después de la implementación , introduce una comparación entre dos puntos 
+temporales diferenciados: el estado previo y el estado posterior a la puesta en 
+marcha de la app. Esto le otorga a esa parte del estudio un carácter comparativo, 
+
+    20 
+sin que se clasifique como diseño longitudinal, dado que no se realiza 
+seguimiento continuo de los mismos indicadores a lo largo del tiempo, sino una 
+medición puntual antes y otra después. 
+En síntesis, el diseño temporal es transversal para la medición de la 
+aceptación tecnológica, con una comparación puntual del antes y después para 
+la evaluación del impacto operativo municipal. 
+ 
+  
+
+    21 
+Referencias 
+Alotaibi, S. J., & Roussinov, D. (2016). User acceptance of m-government 
+services: A combination of TAM and IS success models. 2016 
+International Conference on Information Society (i-Society), (pp. 61-
+66). 
+Arias, F. G. (2012). El proyecto de investigación: Introducción a la 
+metodología científica (6 ed.). Episteme. 
+Carter, L., & Bélanger, F. (2005). The utilization of e-government services: 
+Citizen trust, innovation and acceptance factors. Information Systems 
+Journal, 15(1), 5-25. 
+Instituto Nacional de Estadística y Censos. (2023). Acceso y uso de 
+tecnologías de la información y la comunicación (TIC): Encuesta 
+Permanente de Hogares. Ministerio de Economía de la Nación 
+Argentina. 
+Czaja, S. J., Charness, N., Fisk, A. D., Hertzog, C., Nair, S. N., Rogers, W. A., 
+& Sharit, J. (2006). Factors predicting the use of technology: Findings 
+from the Center for Research and Education on Aging and Technology 
+Enhancement (CREATE). Psychology and Aging, 21(2), 333-352. 
+Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user 
+acceptance of information technology. MIS Quarterly, 13(3), 319-34. 
+Fishbein, M., & Ajzen, I. (1975). Belief, attitude, intention, and behavior: An 
+introduction to theory and research. Addison-Wesley. 
+Legris, P., Ingham, J., & Collerette, P. (2003). Why do people use information 
+technology? A critical review of the technology acceptance model. 
+Information & Management, 40(3), 191-204. 
+Nielsen, J. (1994). Usability engineering. Academic Press. 
+Rogers, E. M. (2003). Diffusion of innovations (5 ed.). Free Press. 
+
+    22 
+Venkatesh, V., & Davis, F. D. (2000). A theoretical extension of the 
+technology acceptance model: Four longitudinal field studies. 
+Management Science, 46(2), 186-204. 
+Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User 
+acceptance of information technology: Toward a unified view. MIS 
+Quarterly, 27(3), 425-478. 
+Warkentin, M., Gefen, D., Pavlou, P. A., & Rose, G. M. (2002). Encouraging 
+citizen adoption of e-government by building trust. Electronic Markets, 
+12(3), 157-162. 
+Zheng, Y., Schachter, H. L., & Holzer, M. (2018). The determinants of citizen 
+participation in e-government: An empirical study. Proceedings of the 
+19th Annual International Conference on Digital Government 
+Research. Association for Computing Machinery. 
+ 

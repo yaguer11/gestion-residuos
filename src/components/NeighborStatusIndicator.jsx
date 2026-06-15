@@ -4,10 +4,11 @@ import { Text, Billboard, RoundedBox } from "@react-three/drei";
 export default function NeighborStatusIndicator({
   notified,
   position = [0.4, 0.9, 0],
+  rotationZ = 0,
 }) {
   return (
     <Billboard position={position}>
-      <group>
+      <group rotation={[0, 0, rotationZ]}>
         <RoundedBox args={[0.3, 0.42, 0.05]} radius={0.04} smoothness={4}>
           <meshStandardMaterial color="#e5e7eb" roughness={0.35} />
         </RoundedBox>

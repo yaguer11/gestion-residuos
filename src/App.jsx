@@ -6,10 +6,25 @@
 import React, { useState, useCallback, useEffect, useRef } from "react";
 import Scene from "./Scene.jsx";
 import ControlPanel from "./ui/ControlPanel.jsx";
+import PresentationModal from "./components/PresentationModal.jsx";
+import ConceptMapModal from "./components/ConceptMapModal.jsx";
+import OperacionalizacionModal from "./components/OperacionalizacionModal.jsx";
+import { PRESENTATION_SLIDES } from "./data/presentationSlides.js";
 // ─── Posiciones iniciales de los vecinos en el plano XZ ───────────────────────
 export const NEIGHBOR_POSITIONS = [
   { id: 1, name: "Juan", x: -3.3, z: -0.6, color: "#1c6294" },
   { id: 2, name: "Maria", x: 2.3, z: 2.2, color: "#e23ce8" },
+  {
+    id: 3,
+    name: "Walter",
+    x: -3.25,
+    z: 5.15,
+    color: "#ef4444",
+    houseOffset: [-0.8, 0, -1.4],
+    figureRotationY: Math.PI / 2,
+    indicatorOffset: [0.2, 0.9, -0.5],
+    indicatorRotationZ: 0,
+  },
 ];
 const initialDumps = NEIGHBOR_POSITIONS.map((n) => ({
   id: n.id,
@@ -19,10 +34,13 @@ const initialDumps = NEIGHBOR_POSITIONS.map((n) => ({
 export default function App() {
   // Control de la simulación
   const [playing, setPlaying] = useState(true);
-  const [speed, setSpeed] = useState(1.6);
+  const [speed, setSpeed] = useState(1.1);
   const [panelOpen, setPanelOpen] = useState(false);
   const [showIntro, setShowIntro] = useState(false);
+  const [showConceptMap, setShowConceptMap] = useState(false);
+  const [showOperacionalizacion, setShowOperacionalizacion] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
+  const [revealIndex, setRevealIndex] = useState(-1);
   const [autoNotify, setAutoNotify] = useState(true);
   const [autoInterval, setAutoInterval] = useState(10);
 
@@ -92,89 +110,60 @@ export default function App() {
   // ── Calcula % calles limpias (ficticio) ───────────────────────────────────
   const activeDumps = dumps.filter((d) => d.active).length;
   const cleanPercent = activeDumps === 0 ? 100 : activeDumps === 1 ? 65 : 30;
-  const slides = [
-    {
-      key: "problema",
-      icon: "🧭",
-      title: "Problema y justificacion",
-      subtitle:
-        "Desincronizacion entre horarios de recoleccion y deposito de residuos.",
-      bullets: [
-        "Contexto: Villa Mercedes, residuos solidos urbanos.",
-        "Problema: microbasurales y obstruccion de desagues.",
-        "Pregunta: aceptacion de app web de alertas vecinales.",
-        "Impacto: higiene urbana y costos municipales.",
-      ],
-      schemaTitle: "Mapa del problema",
-      schemaItems: [
-        { label: "Causa", value: "Falta de informacion oportuna" },
-        { label: "Efecto", value: "Basura fuera de horario" },
-        { label: "Consecuencia", value: "Microbasurales" },
-        { label: "Solucion", value: "Alertas vecinales" },
-      ],
-      tags: ["Social", "Ambiental", "Operativo"],
-    },
-    {
-      key: "objetivos",
-      icon: "🎯",
-      title: "Objetivos e hipotesis",
-      subtitle: "Analizar adopcion y su impacto en la recoleccion.",
-      bullets: [
-        "General: medir adopcion de la plataforma y su impacto operativo.",
-        "Especificos: acceso a informacion, uso en prueba, carga de camiones.",
-        "Hipotesis: alta aceptacion de la app como solucion a la desinformacion.",
-      ],
-      schemaTitle: "Logica de estudio",
-      schemaItems: [
-        { label: "Variable 1", value: "Aceptacion tecnologica" },
-        { label: "Variable 2", value: "Eficiencia operativa" },
-        { label: "Indicador", value: "Uso de app y recorridos" },
-      ],
-      tags: ["Medible", "Verificable"],
-    },
-    {
-      key: "marco",
-      icon: "📚",
-      title: "Marco teorico",
-      subtitle:
-        "Bases conceptuales y antecedentes para interpretar resultados.",
-      bullets: [
-        "Residuos urbanos y ciclo de recoleccion.",
-        "Comunicacion municipal y brecha informacional.",
-        "Tecnologia civica y sistemas de alertas.",
-        "Modelos TAM y UTAUT para adopcion tecnologica.",
-      ],
-      schemaTitle: "Ejes del marco",
-      schemaItems: [
-        { label: "Gestion RSU", value: "Impacto y actores" },
-        { label: "Comunicacion", value: "Canales y conductas" },
-        { label: "Tecnologia", value: "Apps y notificaciones" },
-        { label: "Aceptacion", value: "Percepcion de utilidad" },
-      ],
-      tags: ["Conceptos", "Antecedentes"],
-    },
-    {
-      key: "metodo",
-      icon: "🧪",
-      title: "Marco metodologico (propuesta)",
-      subtitle: "Estructura sugerida para completar el trabajo.",
-      bullets: [
-        "Enfoque cuantitativo con apoyo documental.",
-        "Nivel descriptivo-correlacional.",
-        "Diseno no experimental, de campo, transeccional.",
-        "Tecnica: encuesta. Instrumento: cuestionario estructurado.",
-      ],
-      schemaTitle: "Ficha metodologica",
-      schemaItems: [
-        { label: "Poblacion", value: "Vecinos de Villa Mercedes" },
-        { label: "Muestra", value: "Probabilistica o por conveniencia" },
-        { label: "Analisis", value: "Estadistica descriptiva" },
-        { label: "Etica", value: "Consentimiento informado" },
-      ],
-      tags: ["Pendiente", "Ajustable"],
-    },
-  ];
-  const activeSlide = slides[slideIndex];
+  const activeSlide = PRESENTATION_SLIDES[slideIndex];
+  const dynamicStepsCount = Math.max(activeSlide.steps.length - 1, 0);
+  const activeDynamicIndex = Math.max(revealIndex, -1);
+  const visibleBlocks = Math.min(
+    activeDynamicIndex + 2,
+    activeSlide.steps.length,
+  );
+  const totalSteps = activeSlide.steps.length;
+  const atLastStep =
+    dynamicStepsCount === 0 || activeDynamicIndex >= dynamicStepsCount - 1;
+  const atLastSlide = slideIndex >= PRESENTATION_SLIDES.length - 1;
+  const progress = Math.round((visibleBlocks / totalSteps) * 100);
+  const atEnd = atLastSlide && atLastStep;
+
+  const handleNextBlock = useCallback(() => {
+    if (!atLastStep) {
+      setRevealIndex((prev) => prev + 1);
+    }
+  }, [atLastStep]);
+
+  const handlePrevBlock = useCallback(() => {
+    setRevealIndex((prev) => Math.max(prev - 1, -1));
+  }, []);
+
+  const handleNextSlide = useCallback(() => {
+    if (!atLastSlide) {
+      setSlideIndex((prev) => prev + 1);
+      setRevealIndex(-1);
+    }
+  }, [atLastSlide]);
+
+  const handlePrev = useCallback(() => {
+    if (slideIndex === 0) return;
+    const prevIndex = slideIndex - 1;
+    setSlideIndex(prevIndex);
+    setRevealIndex(
+      Math.max(PRESENTATION_SLIDES[prevIndex].steps.length - 2, -1),
+    );
+  }, [slideIndex]);
+
+  const logoSrc = `${import.meta.env.BASE_URL}logoUNVIME.png`;
+
+  const headerChipStyle = {
+    position: "fixed",
+    zIndex: 30,
+    background:
+      "linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 58, 138, 0.35) 100%)",
+    border: "1px solid rgba(59, 130, 246, 0.45)",
+    borderRadius: "12px",
+    boxShadow:
+      "0 8px 24px rgba(15, 23, 42, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08)",
+    backdropFilter: "blur(10px)",
+    pointerEvents: "none",
+  };
 
   return (
     <div
@@ -185,6 +174,89 @@ export default function App() {
         position: "relative",
       }}
     >
+      {/* ── Marca: logo UNVIME + materia (esquina superior izquierda) ── */}
+      <div
+        style={{
+          ...headerChipStyle,
+          top: "calc(16px + env(safe-area-inset-top))",
+          left: "calc(16px + env(safe-area-inset-left))",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "8px",
+          padding: "10px 14px",
+          maxWidth:
+            "min(220px, calc(100vw - 32px - env(safe-area-inset-left) - env(safe-area-inset-right)))",
+        }}
+        aria-label="UNVIME — Metodología de la Investigación"
+      >
+        <img
+          src={logoSrc}
+          alt="UNVIME — Universidad Nacional de Villa Mercedes"
+          style={{
+            height: "34px",
+            width: "auto",
+            maxWidth: "148px",
+            objectFit: "contain",
+            display: "block",
+            flexShrink: 0,
+          }}
+        />
+        <span
+          style={{
+            fontSize: "12px",
+            fontWeight: 600,
+            lineHeight: 1.3,
+            color: "#e2e8f0",
+            letterSpacing: "0.01em",
+            textAlign: "center",
+            maxWidth: "190px",
+          }}
+        >
+          Metodología de la Investigación
+        </span>
+      </div>
+
+      {/* ── Alumno y profesora (esquina superior derecha) ── */}
+      <div
+        style={{
+          ...headerChipStyle,
+          top: "calc(16px + env(safe-area-inset-top))",
+          // Si esta activado el panel 64px right: "calc(64px + env(safe-area-inset-right))",
+          right: "calc(16px + env(safe-area-inset-right))",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-end",
+          gap: "4px",
+          padding: "10px 14px",
+          textAlign: "right",
+        }}
+        aria-label="Alumno y profesora"
+      >
+        <span
+          style={{
+            fontSize: "12px",
+            fontWeight: 600,
+            lineHeight: 1.35,
+            color: "#e2e8f0",
+            letterSpacing: "0.01em",
+          }}
+        >
+          Alum. Germán Adrián Muñoz
+        </span>
+        <span
+          style={{
+            fontSize: "12px",
+            fontWeight: 500,
+            lineHeight: 1.35,
+            color: "#94a3b8",
+            letterSpacing: "0.01em",
+          }}
+        >
+          Prof. Helga Myrna Blanco
+        </span>
+      </div>
+
       {/* ── Escena 3D (ocupa toda la pantalla) ── */}
       <Scene
         playing={playing}
@@ -195,7 +267,7 @@ export default function App() {
       />
 
       {/* ── Panel de control superpuesto ── */}
-      <ControlPanel
+      {/* <ControlPanel
         playing={playing}
         speed={speed}
         dumps={dumps}
@@ -217,13 +289,17 @@ export default function App() {
           setNotifications([]);
           setMetrics({ travelTime: 0, notifsSent: 0 });
         }}
-      />
+      /> */}
 
       {/* ── Boton de presentacion ── */}
       {!showIntro && (
         <button
           type="button"
-          onClick={() => setShowIntro(true)}
+          onClick={() => {
+            setSlideIndex(0);
+            setRevealIndex(-1);
+            setShowIntro(true);
+          }}
           style={{
             position: "fixed",
             left: "calc(16px + env(safe-area-inset-left))",
@@ -237,282 +313,62 @@ export default function App() {
             zIndex: 30,
           }}
         >
-          Ver presentacion
+          Presentacion
         </button>
       )}
 
-      {/* ── Modal de presentacion ── */}
-      {showIntro && (
-        <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            background:
-              "radial-gradient(circle at 20% 20%, rgba(148, 163, 184, 0.18), transparent 50%), radial-gradient(circle at 80% 30%, rgba(59, 130, 246, 0.16), transparent 45%), rgba(15, 23, 42, 0.25)",
-            backdropFilter: "blur(4px)",
-            display: "flex",
-            alignItems: "stretch",
-            justifyContent: "flex-end",
-            zIndex: 20,
-            padding: "18px",
-          }}
-          className="intro-overlay"
-        >
-          <div
-            style={{
-              width: "860px",
-              maxWidth: "92vw",
-              height: "100%",
-              maxHeight: "100%",
-              background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
-              border: "1px solid rgba(148, 163, 184, 0.6)",
-              borderRadius: "16px",
-              padding: "22px 24px",
-              color: "#0f172a",
-              boxShadow: "0 18px 50px rgba(15, 23, 42, 0.18)",
-              display: "flex",
-              flexDirection: "column",
-              overflow: "hidden",
-            }}
-            className="intro-card"
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <div
-                style={{
-                  width: "44px",
-                  height: "44px",
-                  borderRadius: "12px",
-                  display: "grid",
-                  placeItems: "center",
-                  background: "rgba(59, 130, 246, 0.12)",
-                  border: "1px solid rgba(59, 130, 246, 0.35)",
-                  fontSize: "22px",
-                }}
-              >
-                {activeSlide.icon}
-              </div>
-              <div>
-                <div
-                  style={{
-                    fontSize: "20px",
-                    fontWeight: 700,
-                    letterSpacing: "0.02em",
-                    fontFamily: "'Space Grotesk', 'Rubik', sans-serif",
-                  }}
-                >
-                  {activeSlide.title}
-                </div>
-                <div
-                  style={{
-                    fontSize: "13px",
-                    color: "#475569",
-                    fontFamily: "'Space Grotesk', 'Rubik', sans-serif",
-                  }}
-                >
-                  {activeSlide.subtitle}
-                </div>
-              </div>
-              <div style={{ marginLeft: "auto", display: "flex", gap: "8px" }}>
-                {activeSlide.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    style={{
-                      padding: "4px 10px",
-                      borderRadius: "999px",
-                      background: "rgba(148, 163, 184, 0.2)",
-                      border: "1px solid rgba(148, 163, 184, 0.5)",
-                      fontSize: "11px",
-                      color: "#1e293b",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.08em",
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+      {showConceptMap && (
+        <ConceptMapModal onClose={() => setShowConceptMap(false)} />
+      )}
 
-            <div
-              className="intro-content"
-              style={{
-                display: "grid",
-                gap: "18px",
-                marginTop: "18px",
-                flex: 1,
-                overflowY: "auto",
-                paddingBottom: "8px",
-              }}
-            >
-              <div>
-                <div style={{ display: "grid", gap: "10px" }}>
-                  {activeSlide.bullets.map((item, index) => (
-                    <div
-                      key={item}
-                      style={{
-                        display: "grid",
-                        gridTemplateColumns: "24px 1fr",
-                        gap: "10px",
-                        padding: "10px 12px",
-                        background: "rgba(241, 245, 249, 0.95)",
-                        borderRadius: "10px",
-                        border: "1px solid rgba(148, 163, 184, 0.45)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          width: "24px",
-                          height: "24px",
-                          borderRadius: "6px",
-                          background: "rgba(34, 197, 94, 0.15)",
-                          display: "grid",
-                          placeItems: "center",
-                          fontSize: "12px",
-                          color: "#15803d",
-                          fontWeight: 700,
-                        }}
-                      >
-                        {index + 1}
-                      </div>
-                      <div
-                        style={{
-                          fontSize: "13px",
-                          color: "#0f172a",
-                          lineHeight: 1.5,
-                        }}
-                      >
-                        {item}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+      {showOperacionalizacion && (
+        <OperacionalizacionModal
+          onClose={() => setShowOperacionalizacion(false)}
+        />
+      )}
 
-              <div
-                className="intro-schema"
-                style={{
-                  background: "rgba(241, 245, 249, 0.9)",
-                  borderRadius: "12px",
-                  border: "1px solid rgba(16, 185, 129, 0.35)",
-                  padding: "14px",
-                  display: "grid",
-                  gap: "10px",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "12px",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    color: "#0f766e",
-                    fontWeight: 700,
-                  }}
-                >
-                  {activeSlide.schemaTitle}
-                </div>
-                {activeSlide.schemaItems.map((item) => (
-                  <div
-                    key={item.label}
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      gap: "10px",
-                      padding: "8px 10px",
-                      borderRadius: "8px",
-                      background: "#ffffff",
-                      border: "1px solid rgba(148, 163, 184, 0.45)",
-                    }}
-                  >
-                    <span style={{ fontSize: "12px", color: "#64748b" }}>
-                      {item.label}
-                    </span>
-                    <span style={{ fontSize: "12px", color: "#0f172a" }}>
-                      {item.value}
-                    </span>
-                  </div>
-                ))}
-                <div
-                  style={{
-                    display: "flex",
-                    gap: "8px",
-                    flexWrap: "wrap",
-                  }}
-                >
-                  {["🧩 Variables", "📊 Indicadores", "🧠 Evidencia"].map(
-                    (item) => (
-                      <span
-                        key={item}
-                        style={{
-                          padding: "4px 8px",
-                          borderRadius: "8px",
-                          background: "rgba(59, 130, 246, 0.12)",
-                          border: "1px solid rgba(59, 130, 246, 0.4)",
-                          fontSize: "11px",
-                          color: "#1d4ed8",
-                        }}
-                      >
-                        {item}
-                      </span>
-                    ),
-                  )}
-                </div>
-              </div>
-            </div>
-            <div style={{ display: "flex", gap: "8px", marginTop: "18px" }}>
-              <button
-                type="button"
-                onClick={() => setShowIntro(false)}
-                style={{
-                  padding: "8px 12px",
-                  background: "#f1f5f9",
-                  color: "#1e293b",
-                  border: "1px solid #cbd5f5",
-                  borderRadius: "8px",
-                  cursor: "pointer",
-                }}
-              >
-                Cerrar
-              </button>
-              <div style={{ marginLeft: "auto", display: "flex", gap: "8px" }}>
-                <button
-                  type="button"
-                  onClick={() => setSlideIndex((i) => Math.max(i - 1, 0))}
-                  disabled={slideIndex === 0}
-                  style={{
-                    padding: "8px 12px",
-                    background: slideIndex === 0 ? "#e2e8f0" : "#ffffff",
-                    color: slideIndex === 0 ? "#94a3b8" : "#0f172a",
-                    border: "1px solid #cbd5e1",
-                    borderRadius: "8px",
-                    cursor: slideIndex === 0 ? "default" : "pointer",
-                  }}
-                >
-                  Anterior
-                </button>
-                <button
-                  type="button"
-                  onClick={() =>
-                    setSlideIndex((i) => Math.min(i + 1, slides.length - 1))
-                  }
-                  disabled={slideIndex === slides.length - 1}
-                  style={{
-                    padding: "8px 12px",
-                    background:
-                      slideIndex === slides.length - 1 ? "#e2e8f0" : "#2563eb",
-                    color:
-                      slideIndex === slides.length - 1 ? "#94a3b8" : "#ffffff",
-                    border: "1px solid #1d4ed8",
-                    borderRadius: "8px",
-                    cursor:
-                      slideIndex === slides.length - 1 ? "default" : "pointer",
-                  }}
-                >
-                  Siguiente
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* ── Boton de descarga del trabajo final ── */}
+      <a
+        href={`${import.meta.env.BASE_URL}Trabajo Final - Germán Adrián Muñoz.pdf?v=${import.meta.env.VITE_BUILD_TIME ?? Date.now()}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "fixed",
+          right: "calc(16px + env(safe-area-inset-right))",
+          bottom: "calc(16px + env(safe-area-inset-bottom))",
+          padding: "8px 12px",
+          background: "rgba(15, 23, 42, 0.9)",
+          color: "#e2e8f0",
+          border: "1px solid #1e40af",
+          borderRadius: "8px",
+          cursor: "pointer",
+          zIndex: 30,
+          textDecoration: "none",
+          fontSize: "14px",
+        }}
+      >
+        Trabajo Final
+      </a>
+
+      {showIntro && !showConceptMap && !showOperacionalizacion && (
+        <PresentationModal
+          slide={activeSlide}
+          slideIndex={slideIndex}
+          revealIndex={activeDynamicIndex}
+          hasDynamicStep={dynamicStepsCount > 0}
+          visibleBlocks={visibleBlocks}
+          totalSteps={totalSteps}
+          atLastStep={atLastStep}
+          atEnd={atEnd}
+          progress={progress}
+          onNextBlock={handleNextBlock}
+          onPrevBlock={handlePrevBlock}
+          onNextSlide={handleNextSlide}
+          onPrev={handlePrev}
+          onClose={() => setShowIntro(false)}
+          onOpenConceptMap={() => setShowConceptMap(true)}
+          onOpenOperacionalizacion={() => setShowOperacionalizacion(true)}
+        />
       )}
     </div>
   );

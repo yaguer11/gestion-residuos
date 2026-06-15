@@ -46,16 +46,16 @@ export default function NeighborFigure({ color, seed, isMaria }) {
           <cylinderGeometry args={[0.06, 0.07, 0.5, 6]} />
           <meshStandardMaterial color="#334155" roughness={0.7} />
         </mesh>
-        <mesh castShadow position={[0, -0.515, 0.04]}>
-          <boxGeometry args={[0.12, 0.51, 0.2]} />
+        <mesh castShadow position={[0, -0.3, 0.04]}>
+          <boxGeometry args={[0.12, 0.05, 0.2]} />
           <meshStandardMaterial color="#111827" roughness={0.8} />
         </mesh>
-        <mesh castShadow position={[0, -0.52, 0.12]}>
-          <boxGeometry args={[0.12, 0.51, 0.15]} />
+        <mesh castShadow position={[0, -0.3, 0.12]}>
+          <boxGeometry args={[0.12, 0.03, 0.1]} />
           <meshStandardMaterial color="#30353c" roughness={0.6} />
         </mesh>
-        <mesh castShadow position={[0, -0.56, 0.065]}>
-          <boxGeometry args={[0.125, 0.54, 0.26]} />
+        <mesh castShadow position={[0, -0.3, 0.065]}>
+          <boxGeometry args={[0.125, 0.04, 0.2]} />
           <meshStandardMaterial color="#e5e7eb" roughness={0.5} />
         </mesh>
       </group>
@@ -65,16 +65,16 @@ export default function NeighborFigure({ color, seed, isMaria }) {
           <cylinderGeometry args={[0.06, 0.07, 0.5, 6]} />
           <meshStandardMaterial color="#334155" roughness={0.7} />
         </mesh>
-        <mesh castShadow position={[0, -0.515, 0.04]}>
-          <boxGeometry args={[0.12, 0.51, 0.2]} />
+        <mesh castShadow position={[0, -0.3, 0.04]}>
+          <boxGeometry args={[0.12, 0.05, 0.2]} />
           <meshStandardMaterial color="#111827" roughness={0.8} />
         </mesh>
-        <mesh castShadow position={[0, -0.52, 0.12]}>
-          <boxGeometry args={[0.12, 0.51, 0.15]} />
+        <mesh castShadow position={[0, -0.3, 0.12]}>
+          <boxGeometry args={[0.12, 0.03, 0.1]} />
           <meshStandardMaterial color="#30353c" roughness={0.6} />
         </mesh>
-        <mesh castShadow position={[0, -0.56, 0.065]}>
-          <boxGeometry args={[0.125, 0.54, 0.26]} />
+        <mesh castShadow position={[0, -0.3, 0.065]}>
+          <boxGeometry args={[0.125, 0.04, 0.2]} />
           <meshStandardMaterial color="#e5e7eb" roughness={0.5} />
         </mesh>
       </group>
